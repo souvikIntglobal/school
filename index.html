@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DPE Bangalore East — Homepage Concept</title>
+<meta name="description" content="DPE Bangalore East is an IGCSE & IB World School in Whitefield, East Bangalore, guiding students from Early Years to Grade 12.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            darkGreen: '#063B23',
+                            green: '#094F29',
+                            lightGreen: '#0D6E3B',
+                            cream: '#FAF7F0',
+                            darkCream: '#F1EAD9',
+                            gold: '#D4A316',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="nav">
+    <div class="brand">
+      <div class="brand-mark">DE</div>
+      <div>
+        <div class="brand-name">DPE Bangalore East</div>
+        <div class="brand-sub">IGCSE &amp; IB World School</div>
+      </div>
+    </div>
+    <div class="nav-links-wrap">
+      <nav class="links">
+        <a href="#pathway">Curriculum</a>
+        <a href="#why">Why DPE East</a>
+        <a href="#programs">Programs</a>
+        <a href="#gallery">Campus Life</a>
+        <a href="#admissions">Admissions</a>
+      </nav>
+      <div class="nav-right">
+        <button class="icon-btn" id="searchOpen" aria-label="Search the site">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.2" y2="16.2"/></svg>
+        </button>
+        <a href="#admissions" class="btn btn-primary nav-cta">Book a Campus Visit</a>
+      </div>
+    </div>
+    <button class="hamburger icon-btn" id="menuOpen" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="menuClose" aria-label="Close menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+  </button>
+  <a href="#pathway">Curriculum</a>
+  <a href="#why">Why DPE East</a>
+  <a href="#programs">Programs</a>
+  <a href="#gallery">Campus Life</a>
+  <a href="#admissions">Admissions</a>
+  <a href="#admissions" class="btn btn-primary">Book a Campus Visit</a>
+</div>
+
+<!-- search overlay -->
+<div class="search-overlay" id="searchOverlay">
+  <button class="search-close" id="searchClose" aria-label="Close search">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+  </button>
+  <div class="search-box">
+    <form onsubmit="return false;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.2" y2="16.2"/></svg>
+      <input type="text" placeholder="Search admissions, curriculum, faculty…" autocomplete="off">
+    </form>
+  </div>
+</div>
+
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <img src="https://dpsbangaloreeast.edu.in/wp-content/uploads/2024/12/DSC05111-scaled.jpg" alt="Students working together in a bright, modern campus library">
+  </div>
+  <div class="hero-scrim"></div>
+
+  <div class="hero-content">
+    <div class="hero-copy reveal">
+      <span class="eyebrow light">Early Years to Grade 12 &nbsp;·&nbsp; Cambridge IGCSE &nbsp;·&nbsp; IB Diploma</span>
+      <h1>An international education, <em>grown in</em> East Bangalore.</h1>
+      
+      <div class="hero-actions">
+        <a href="#admissions" class="btn btn-primary">Apply Now</a>
+        <a href="#gallery" class="btn btn-glass btn-play">
+          <span class="play-circle"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7L8 5Z"/></svg></span>
+          Virtual Tour
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section class="accred" id="accreditations">
+  <div class="accred-inner">
+    <div class="accred-head reveal">
+      <span class="eyebrow">World-recognised qualifications</span>
+      <h2>Accredited by the bodies international families trust.</h2>
+      <p>Our programmes are authorised and inspected by leading global education organisations — so your child's credentials travel with them, anywhere.</p>
+    </div>
+    <div class="accred-grid reveal">
+      <div class="accred-card">
+        <div class="accred-logo">
+          <svg viewBox="0 0 120 48" fill="none"><rect x="2" y="8" width="116" height="32" rx="2" stroke="#007944" stroke-width="1.5"/><text x="60" y="30" text-anchor="middle" fill="#007944" font-family="Inter,sans-serif" font-size="11" font-weight="700">Cambridge</text></svg>
+        </div>
+        <h3>Cambridge International</h3>
+        <p>IGCSE &amp; Checkpoint examinations recognised in 160+ countries</p>
+      </div>
+      <div class="accred-card">
+        <div class="accred-logo">
+          <svg viewBox="0 0 120 48" fill="none"><circle cx="24" cy="24" r="16" stroke="#007944" stroke-width="1.5"/><text x="52" y="30" fill="#007944" font-family="Inter,sans-serif" font-size="13" font-weight="700">IB World School</text></svg>
+        </div>
+        <h3>IB Organisation</h3>
+        <p>Authorised Diploma Programme school since 2014</p>
+      </div>
+      <div class="accred-card">
+        <div class="accred-logo">
+          <svg viewBox="0 0 120 48" fill="none"><path d="M10 36V12h14l8 16 8-16h14v24" stroke="#007944" stroke-width="1.5" stroke-linejoin="round"/><text x="60" y="44" text-anchor="middle" fill="#007944" font-family="Inter,sans-serif" font-size="9" font-weight="600">CIS Member</text></svg>
+        </div>
+        <h3>Council of Intl. Schools</h3>
+        <p>Member school committed to global education standards</p>
+      </div>
+      <div class="accred-card">
+        <div class="accred-logo">
+          <svg viewBox="0 0 120 48" fill="none"><rect x="8" y="14" width="104" height="20" rx="2" stroke="#007944" stroke-width="1.5"/><text x="60" y="28" text-anchor="middle" fill="#007944" font-family="Inter,sans-serif" font-size="10" font-weight="700">NEASC Accredited</text></svg>
+        </div>
+        <h3>NEASC</h3>
+        <p>Accredited for quality assurance and continuous improvement</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="pathway-section" id="pathway">
+  <div class="pathway-head reveal">
+    <span class="eyebrow light">The Learning Pathway</span>
+    <h2>One school, one continuous curriculum — from age 3 to 18.</h2>
+    <p>Children move through four connected stages, each building the habits of mind the next one asks for. No re-orientation, no lost years — just one long, deliberate arc toward the IB Diploma.</p>
+  </div>
+  <div class="ribbon-wrap reveal">
+    <div class="ribbon">
+      <div class="ribbon-line"></div>
+      <div class="ribbon-stages">
+        <div class="stage">
+          <div class="stage-dot"></div>
+          <div class="stage-age">Ages 3–6</div>
+          <div class="stage-name">Early Years</div>
+          <div class="stage-desc">Play-based foundation years focused on language, motor skills, and curiosity — the groundwork for inquiry-led learning.</div>
+        </div>
+        <div class="stage">
+          <div class="stage-dot"></div>
+          <div class="stage-age">Ages 6–14 · Grades 1–8</div>
+          <div class="stage-name">Primary &amp; Middle Years</div>
+          <div class="stage-desc">A Cambridge-aligned foundation across sciences, humanities and the arts, with a second language introduced from Grade 3.</div>
+        </div>
+        <div class="stage">
+          <div class="stage-dot"></div>
+          <div class="stage-age">Ages 14–16 · Grades 9–10</div>
+          <div class="stage-name">Cambridge IGCSE</div>
+          <div class="stage-desc">Students choose from 20+ subjects, sitting Cambridge Assessment International Education examinations recognised in 160+ countries.</div>
+        </div>
+        <div class="stage">
+          <div class="stage-dot"></div>
+          <div class="stage-age">Ages 16–18 · Grades 11–12</div>
+          <div class="stage-name">IB Diploma Programme</div>
+          <div class="stage-desc">Six subject groups, the Extended Essay, TOK and CAS — preparing students for direct entry to universities worldwide.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="global" id="global">
+  <div class="global-inner">
+    <div class="global-copy reveal">
+      <span class="eyebrow">A truly global community</span>
+      <h2>30+ nationalities. Six continents. One campus in East Bangalore.</h2>
+      <p>Our student body mirrors the diversity of the international schools families know from Singapore, Dubai, and London — with the warmth and accessibility of a close-knit community.</p>
+      <div class="global-stats">
+        <div class="global-stat">
+          <div class="num">12+</div>
+          <div class="lbl">Languages spoken across the student body</div>
+        </div>
+        <div class="global-stat">
+          <div class="num">40%</div>
+          <div class="lbl">Students joined mid-year from overseas</div>
+        </div>
+        <div class="global-stat">
+          <div class="num">8</div>
+          <div class="lbl">International cultural festivals each year</div>
+        </div>
+        <div class="global-stat">
+          <div class="num">3</div>
+          <div class="lbl">Mother-tongue language support programmes</div>
+        </div>
+      </div>
+    </div>
+    <div class="global-visual reveal">
+      <h3>Languages on campus</h3>
+      <p>English is the language of instruction. Additional languages taught and supported across all year groups.</p>
+      <div class="lang-grid">
+        <div class="lang-item"><span class="flag">🇬🇧</span><span>English<small>Language of instruction</small></span></div>
+        <div class="lang-item"><span class="flag">🇫🇷</span><span>French<small>From Grade 3</small></span></div>
+        <div class="lang-item"><span class="flag">🇪🇸</span><span>Spanish<small>IGCSE &amp; IB option</small></span></div>
+        <div class="lang-item"><span class="flag">🇩🇪</span><span>German<small>IGCSE option</small></span></div>
+        <div class="lang-item"><span class="flag">🇮🇳</span><span>Hindi<small>Mother-tongue support</small></span></div>
+        <div class="lang-item"><span class="flag">🇯🇵</span><span>Japanese<small>After-school club</small></span></div>
+        <div class="lang-item"><span class="flag">🇨🇳</span><span>Mandarin<small>From Grade 6</small></span></div>
+        <div class="lang-item"><span class="flag">🇰🇷</span><span>Korean<small>EAL community</small></span></div>
+        <div class="lang-item"><span class="flag">🌍</span><span>Arabic<small>Mother-tongue support</small></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="gallery-inner">
+    <div class="gallery-head reveal">
+      <div>
+        <span class="eyebrow">Campus Life</span>
+        <h2 style="margin-top:10px;">A day on campus</h2>
+      </div>
+      <a href="#" class="btn btn-outline">View Virtual Tour</a>
+    </div>
+    <div class="gallery-grid reveal">
+      <div class="g-item g1">
+        <img src="https://dpsbangaloreeast.edu.in/storage/2024/12/DSC08768-scaled.jpg" alt="Students in the library">
+        <div class="cap">The Learning Commons — open before first bell, after last</div>
+      </div>
+      <div class="g-item g2">
+        <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=600&q=80" alt="Early years classroom">
+        <div class="cap">Early Years studio</div>
+      </div>
+      <div class="g-item g3">
+        <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=600&q=80" alt="Science lab">
+        <div class="cap">IGCSE Science labs</div>
+      </div>
+      <div class="g-item g4">
+        <img src="https://dpsbangaloreeast.edu.in/storage/2024/12/DSC07164-scaled.jpg">
+        <div class="cap">Class of 2026 — 100% Diploma award rate</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="programs" id="programs">
+  <div class="programs-head reveal">
+    <span class="eyebrow">Beyond the classroom</span>
+    <h2>Global programmes that build confident, well-rounded graduates.</h2>
+    <p>From Model United Nations to international service trips — our co-curricular offering matches what you'd expect at a top-tier international school, on a campus 20 minutes from Whitefield.</p>
+  </div>
+  <div class="programs-grid">
+    <article class="prog-card reveal">
+      <div class="prog-img">
+        <img src="https://dpsbangaloreeast.edu.in/storage/2024/12/DSC08431-scaled.jpg" alt="Students in a Model UN session">
+        <span class="prog-tag">Leadership</span>
+      </div>
+      <div class="prog-body">
+        <h3>Model United Nations</h3>
+        <p>Our MUN delegation competes at THIMUN-affiliated conferences in Singapore and Dubai. Students develop research, diplomacy, and public speaking on global issues.</p>
+        <div class="prog-meta">
+          <span class="prog-chip">Grades 8–12</span>
+          <span class="prog-chip">Annual overseas conference</span>
+        </div>
+      </div>
+    </article>
+    <article class="prog-card reveal">
+      <div class="prog-img">
+        <img src="https://dpsbangaloreeast.edu.in/storage/2024/12/DSC08431-scaled.jpg" alt="Students on an outdoor expedition">
+        <span class="prog-tag">Adventure</span>
+      </div>
+      <div class="prog-body">
+        <h3>Duke of Edinburgh Award</h3>
+        <p>Bronze, Silver and Gold levels — combining service, skills, physical recreation and adventurous journeys. Recognised by universities worldwide as evidence of character.</p>
+        <div class="prog-meta">
+          <span class="prog-chip">Ages 14–18</span>
+          <span class="prog-chip">IB CAS aligned</span>
+        </div>
+      </div>
+    </article>
+    <article class="prog-card reveal">
+      <div class="prog-img">
+        <img src="https://dpsbangaloreeast.edu.in/storage/2024/12/DSC08431-scaled.jpg" alt="Student orchestra performance">
+        <span class="prog-tag">Arts</span>
+      </div>
+      <div class="prog-body">
+        <h3>International Arts Festival</h3>
+        <p>Annual showcase bringing together music, theatre and visual arts from across cultures — with visiting artists from the UK, Japan and India collaborating with students.</p>
+        <div class="prog-meta">
+          <span class="prog-chip">All year groups</span>
+          <span class="prog-chip">Cross-cultural</span>
+        </div>
+      </div>
+    </article>
+    <article class="prog-card reveal">
+      <div class="prog-img">
+        <img src="https://dpsbangaloreeast.edu.in/storage/2024/12/DSC08431-scaled.jpg" alt="Students playing football">
+        <span class="prog-tag">Sport</span>
+      </div>
+      <div class="prog-body">
+        <h3>International Sports League</h3>
+        <p>Football, basketball, swimming and tennis teams compete in the Bangalore International Schools Sports Association (BISSA) — with fixtures against 12 international schools.</p>
+        <div class="prog-meta">
+          <span class="prog-chip">Year-round</span>
+          <span class="prog-chip">BISSA member</span>
+        </div>
+      </div>
+    </article>
+    <article class="prog-card reveal">
+      <div class="prog-img">
+        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=600&q=80" alt="Community service project">
+        <span class="prog-tag">Service</span>
+      </div>
+      <div class="prog-body">
+        <h3>Global Service Learning</h3>
+        <p>IB CAS and IGCSE Global Perspectives projects partner with NGOs across Karnataka — building empathy and leadership through sustained community engagement.</p>
+        <div class="prog-meta">
+          <span class="prog-chip">Grades 9–12</span>
+          <span class="prog-chip">CAS hours</span>
+        </div>
+      </div>
+    </article>
+    <article class="prog-card reveal">
+      <div class="prog-img">
+        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80" alt="Students in a science fair">
+        <span class="prog-tag">STEM</span>
+      </div>
+      <div class="prog-body">
+        <h3>International Science Fair</h3>
+        <p>Students present research at the ISRO-partnered Bangalore Science Expo and selected entries advance to the Intel ISEF regional round — with mentors from IISc Bangalore.</p>
+        <div class="prog-meta">
+          <span class="prog-chip">Grades 6–12</span>
+          <span class="prog-chip">Research-led</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="testi" id="testimonials">
+  <svg class="testi-globe" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+    <circle cx="100" cy="100" r="88" stroke="currentColor" stroke-width="1.2" color="var(--parchment)"/>
+    <ellipse cx="100" cy="100" rx="36" ry="88" stroke="currentColor" stroke-width="1.2" color="var(--parchment)"/>
+    <line x1="12" y1="100" x2="188" y2="100" stroke="currentColor" stroke-width="1.2" color="var(--parchment)"/>
+    <path d="M100 12c22 26 34 58 34 88s-12 62-34 88c-22-26-34-58-34-88s12-62 34-88Z" stroke="currentColor" stroke-width="1.2" color="var(--parchment)"/>
+  </svg>
+
+  <div class="testi-head reveal">
+    <div>
+      <span class="eyebrow light">Voices from our community</span>
+      <h2>Families from 30+ countries, one shared experience.</h2>
+      <p>Expat and local families tell us what it feels like to join mid-year, navigate Cambridge and IB, and find a school that understands international transitions.</p>
+    </div>
+    <div class="testi-controls">
+      <button class="testi-btn" id="testiPrev" aria-label="Previous testimonial">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button class="testi-btn" id="testiNext" aria-label="Next testimonial">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="testi-track-wrap">
+    <div class="testi-track" id="testiTrack" role="region" aria-label="Parent testimonials carousel" tabindex="0">
+
+      <article class="testi-card">
+        <div class="testi-card-top">
+          <div class="testi-author">
+            <div class="testi-avatar">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=120&h=120&q=80" alt="">
+            </div>
+            <div class="testi-meta">
+              <div class="testi-name">Sarah Al-Mansouri</div>
+              <div class="testi-role">Parent · Grade 8</div>
+              <span class="testi-flag"><span class="flag">🇦🇪</span> Relocated from Dubai</span>
+            </div>
+          </div>
+          <div class="testi-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+        </div>
+        <div class="testi-quote-mark">"</div>
+        <blockquote>We moved from Dubai expecting a difficult transition. Within a term our daughter was ahead of where her old school had her — the teachers understood exactly where she was in the Cambridge syllabus.</blockquote>
+        <div class="testi-card-footer">
+          <span class="testi-tag">Mid-year admission</span>
+          <span>Joined Aug 2025</span>
+        </div>
+      </article>
+
+      <article class="testi-card">
+        <div class="testi-card-top">
+          <div class="testi-author">
+            <div class="testi-avatar">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=120&h=120&q=80" alt="">
+            </div>
+            <div class="testi-meta">
+              <div class="testi-name">James &amp; Priya Nair</div>
+              <div class="testi-role">Parents · IB Diploma Year 2</div>
+              <span class="testi-flag"><span class="flag">🇬🇧</span> Relocated from London</span>
+            </div>
+          </div>
+          <div class="testi-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+        </div>
+        <div class="testi-quote-mark">"</div>
+        <blockquote>The IGCSE results speak for themselves, but what convinced us was how early they started talking about university pathways — our son had a shortlist of UK and US schools by Grade 10.</blockquote>
+        <div class="testi-card-footer">
+          <span class="testi-tag">University counselling</span>
+          <span>Whitefield · Since 2022</span>
+        </div>
+      </article>
+
+      <article class="testi-card">
+        <div class="testi-card-top">
+          <div class="testi-author">
+            <div class="testi-avatar">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&h=120&q=80" alt="">
+            </div>
+            <div class="testi-meta">
+              <div class="testi-name">Yuki Tanaka</div>
+              <div class="testi-role">Parent · Grade 5</div>
+              <span class="testi-flag"><span class="flag">🇯🇵</span> Relocated from Singapore</span>
+            </div>
+          </div>
+          <div class="testi-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+        </div>
+        <div class="testi-quote-mark">"</div>
+        <blockquote>Coming from an IB school in Singapore, we needed continuity. DPE East matched the inquiry-based approach our children knew — and the EAL support for our younger one was exceptional.</blockquote>
+        <div class="testi-card-footer">
+          <span class="testi-tag">EAL support</span>
+          <span>Joined Jan 2026</span>
+        </div>
+      </article>
+
+      <article class="testi-card">
+        <div class="testi-card-top">
+          <div class="testi-author">
+            <div class="testi-avatar">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&h=120&q=80" alt="">
+            </div>
+            <div class="testi-meta">
+              <div class="testi-name">Marcus Weber</div>
+              <div class="testi-role">Parent · Grade 10 IGCSE</div>
+              <span class="testi-flag"><span class="flag">🇩🇪</span> Relocated from Munich</span>
+            </div>
+          </div>
+          <div class="testi-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+        </div>
+        <div class="testi-quote-mark">"</div>
+        <blockquote>As a German family in Bangalore's tech corridor, we wanted a school recognised back home and abroad. Cambridge IGCSE here is exactly what European universities expect to see on an application.</blockquote>
+        <div class="testi-card-footer">
+          <span class="testi-tag">IGCSE pathway</span>
+          <span>Joined Aug 2024</span>
+        </div>
+      </article>
+
+      <article class="testi-card">
+        <div class="testi-card-top">
+          <div class="testi-author">
+            <div class="testi-avatar">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=120&h=120&q=80" alt="">
+            </div>
+            <div class="testi-meta">
+              <div class="testi-name">Ananya Sharma</div>
+              <div class="testi-role">Parent · Early Years</div>
+              <span class="testi-flag"><span class="flag">🇮🇳</span> Bangalore · Local family</span>
+            </div>
+          </div>
+          <div class="testi-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+        </div>
+        <div class="testi-quote-mark">"</div>
+        <blockquote>We chose DPE East for the international exposure without leaving Bangalore. Our son plays football with classmates from six countries — that global mindset starts in the playground, not just the classroom.</blockquote>
+        <div class="testi-card-footer">
+          <span class="testi-tag">Early Years</span>
+          <span>Since 2023</span>
+        </div>
+      </article>
+
+      <article class="testi-card">
+        <div class="testi-card-top">
+          <div class="testi-author">
+            <div class="testi-avatar">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&h=120&q=80" alt="">
+            </div>
+            <div class="testi-meta">
+              <div class="testi-name">David Okonkwo</div>
+              <div class="testi-role">Parent · Grade 7</div>
+              <span class="testi-flag"><span class="flag">🇳🇬</span> Relocated from Lagos</span>
+            </div>
+          </div>
+          <div class="testi-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+        </div>
+        <div class="testi-quote-mark">"</div>
+        <blockquote>The admissions team understood our timeline — we had six weeks before a corporate relocation. They mapped subject gaps, arranged a shadow day, and our daughter started confident on day one.</blockquote>
+        <div class="testi-card-footer">
+          <span class="testi-tag">Fast-track admission</span>
+          <span>Joined Mar 2025</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <div class="testi-progress reveal">
+    <div class="testi-bar"><div class="testi-bar-fill" id="testiBarFill"></div></div>
+    <div class="testi-count"><span id="testiCurrent">1</span> / <span id="testiTotal">6</span></div>
+  </div>
+
+  <div class="testi-nations reveal">
+    <span class="testi-nations-label">Families from</span>
+    <span class="nation-chip"><span class="flag">🇦🇪</span> UAE</span>
+    <span class="nation-chip"><span class="flag">🇬🇧</span> United Kingdom</span>
+    <span class="nation-chip"><span class="flag">🇸🇬</span> Singapore</span>
+    <span class="nation-chip"><span class="flag">🇩🇪</span> Germany</span>
+    <span class="nation-chip"><span class="flag">🇯🇵</span> Japan</span>
+    <span class="nation-chip"><span class="flag">🇳🇬</span> Nigeria</span>
+    <span class="nation-chip"><span class="flag">🇺🇸</span> United States</span>
+    <span class="nation-chip"><span class="flag">🇦🇺</span> Australia</span>
+    <span class="nation-chip"><span class="flag">🇮🇳</span> India</span>
+  </div>
+</section>
+
+<section class="outcomes" id="outcomes">
+  <div class="outcomes-inner">
+    <div class="outcomes-top reveal">
+      <div>
+        <span class="eyebrow">Where our graduates go</span>
+        <h2>University destinations across five continents.</h2>
+        <p>Class of 2025 received offers from 47 universities in 12 countries — with dedicated counsellors guiding every family through UCAS, Common App, and direct-entry applications.</p>
+      </div>
+      <div class="outcomes-stats">
+        <div class="out-stat">
+          <div class="num">98%</div>
+          <div class="lbl">First-choice university acceptance</div>
+        </div>
+        <div class="out-stat">
+          <div class="num">36</div>
+          <div class="lbl">IB Diploma average points (2025)</div>
+        </div>
+        <div class="out-stat">
+          <div class="num">12</div>
+          <div class="lbl">Countries with confirmed offers</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="uni-marquee-wrap reveal" aria-hidden="true">
+      <div class="uni-marquee">
+        <div class="uni-card"><div class="uni-icon">OX</div><div><h4>University of Oxford</h4><p>UK · 3 offers (2025)</p></div></div>
+        <div class="uni-card"><div class="uni-icon">IC</div><div><h4>Imperial College London</h4><p>UK · Engineering</p></div></div>
+        <div class="uni-card"><div class="uni-icon">NU</div><div><h4>National University of Singapore</h4><p>Singapore · Computer Science</p></div></div>
+        <div class="uni-card"><div class="uni-icon">UM</div><div><h4>University of Melbourne</h4><p>Australia · Medicine</p></div></div>
+        <div class="uni-card"><div class="uni-icon">TU</div><div><h4>TU Munich</h4><p>Germany · Engineering</p></div></div>
+        <div class="uni-card"><div class="uni-icon">NY</div><div><h4>NYU Abu Dhabi</h4><p>UAE · Liberal Arts</p></div></div>
+        <div class="uni-card"><div class="uni-icon">UI</div><div><h4>University of Toronto</h4><p>Canada · Business</p></div></div>
+        <div class="uni-card"><div class="uni-icon">AS</div><div><h4>Ashoka University</h4><p>India · Economics</p></div></div>
+        <!-- duplicate for seamless loop -->
+        <div class="uni-card"><div class="uni-icon">OX</div><div><h4>University of Oxford</h4><p>UK · 3 offers (2025)</p></div></div>
+        <div class="uni-card"><div class="uni-icon">IC</div><div><h4>Imperial College London</h4><p>UK · Engineering</p></div></div>
+        <div class="uni-card"><div class="uni-icon">NU</div><div><h4>National University of Singapore</h4><p>Singapore · Computer Science</p></div></div>
+        <div class="uni-card"><div class="uni-icon">UM</div><div><h4>University of Melbourne</h4><p>Australia · Medicine</p></div></div>
+        <div class="uni-card"><div class="uni-icon">TU</div><div><h4>TU Munich</h4><p>Germany · Engineering</p></div></div>
+        <div class="uni-card"><div class="uni-icon">NY</div><div><h4>NYU Abu Dhabi</h4><p>UAE · Liberal Arts</p></div></div>
+        <div class="uni-card"><div class="uni-icon">UI</div><div><h4>University of Toronto</h4><p>Canada · Business</p></div></div>
+        <div class="uni-card"><div class="uni-icon">AS</div><div><h4>Ashoka University</h4><p>India · Economics</p></div></div>
+      </div>
+    </div>
+
+    <div class="dest-grid reveal">
+      <div class="dest-item"><div class="flag">🇬🇧</div><div class="country">United Kingdom</div><div class="count">18</div></div>
+      <div class="dest-item"><div class="flag">🇺🇸</div><div class="country">United States</div><div class="count">12</div></div>
+      <div class="dest-item"><div class="flag">🇦🇺</div><div class="country">Australia</div><div class="count">9</div></div>
+      <div class="dest-item"><div class="flag">🇨🇦</div><div class="country">Canada</div><div class="count">7</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="relocate" id="relocate">
+  <div class="relocate-inner">
+    <div class="relocate-copy reveal">
+      <span class="eyebrow light">Moving to Bangalore?</span>
+      <h2>We understand international relocations — because half our families arrive mid-year.</h2>
+      <p>Whether you're coming from the Gulf, Europe, or Southeast Asia, our admissions team has a structured onboarding process designed for families on corporate timelines.</p>
+      <div class="relocate-steps">
+        <div class="rel-step">
+          <div class="rel-num">1</div>
+          <div>
+            <h4>Virtual discovery call</h4>
+            <p>30-minute video call with admissions — curriculum mapping, seat availability, and fee structure sent before you land.</p>
+          </div>
+        </div>
+        <div class="rel-step">
+          <div class="rel-num">2</div>
+          <div>
+            <h4>Assessment &amp; shadow day</h4>
+            <p>Cambridge-aligned placement tests plus a full-day shadow experience so your child meets their class before enrolling.</p>
+          </div>
+        </div>
+        <div class="rel-step">
+          <div class="rel-num">3</div>
+          <div>
+            <h4>Seamless onboarding</h4>
+            <p>EAL screening, buddy pairing, parent WhatsApp group, and a dedicated relocation liaison for your first term.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="relocate-panel reveal">
+      <h3>International family support</h3>
+      <p>Included for all families relocating from outside Karnataka.</p>
+      <div class="rel-services">
+        <div class="rel-svc">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Z"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z"/></svg>
+          <div><strong>EAL &amp; language support</strong><span>Dedicated English as an Additional Language teachers for new arrivals</span></div>
+        </div>
+        <div class="rel-svc">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <div><strong>Housing &amp; area guide</strong><span>Whitefield, Sarjapur &amp; Indiranagar neighbourhood recommendations</span></div>
+        </div>
+        <div class="rel-svc">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+          <div><strong>Corporate relocation liaison</strong><span>Direct billing arrangements with HR teams at major tech firms</span></div>
+        </div>
+        <div class="rel-svc">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <div><strong>Parent community network</strong><span>Expat parent mentors matched by country of origin</span></div>
+        </div>
+        <div class="rel-svc">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <div><strong>Document &amp; visa guidance</strong><span>Transfer certificates, apostille support, and FRRO advisory</span></div>
+        </div>
+        <div class="rel-svc">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div><strong>Flexible start dates</strong><span>Rolling admissions across all year groups, year-round</span></div>
+        </div>
+      </div>
+      <a href="#admissions" class="btn btn-primary">Speak to our relocation team</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band" id="admissions">
+  <div class="cta-inner">
+    <div class="reveal">
+      <h2>Admissions for August 2027 are open.</h2>
+      <p>Limited seats remain across Early Years through Grade 10 IGCSE entry points.</p>
+    </div>
+    <div style="display:flex; gap:14px; flex-wrap:wrap;" class="reveal">
+      <a href="#" class="btn btn-outline">Request a Prospectus</a>
+      <a href="#" class="btn btn-primary">Apply Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+  <footer class="bg-brand-darkGreen text-white/90 border-t border-brand-green/30 pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          <div class="space-y-4">
+              <div class="flex items-center space-x-3">
+                  <div class="w-8 h-8 bg-brand-gold rounded-full flex items-center justify-center font-serif font-bold text-brand-darkGreen text-base">E</div>
+                  <span class="font-serif font-bold text-lg tracking-wide">EBIS</span>
+              </div>
+              <p class="text-stone-400 text-xs leading-relaxed">
+                  Accredited international standard campus offering holistic development pathways to modern global leaders.
+              </p>
+              <div class="flex space-x-4 pt-2">
+                  <a href="#" class="text-brand-gold hover:text-white"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#" class="text-brand-gold hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#" class="text-brand-gold hover:text-white"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+          </div>
+
+          <div class="space-y-4">
+              <h4 class="font-bold text-xs tracking-wider uppercase text-brand-gold">Admissions Channels</h4>
+              <ul class="space-y-2 text-xs text-stone-400">
+                  <li><a href="#portals" class="hover:text-brand-gold">Nursery - Grade IX Portal</a></li>
+                  <li><a href="#portals" class="hover:text-brand-gold">Grade XI Senior Portal</a></li>
+                  <li><a href="#criteria" class="hover:text-brand-gold">Age Eligibility Norms</a></li>
+                  <li><a href="#criteria" class="hover:text-brand-gold">Document Dossier Pack</a></li>
+              </ul>
+          </div>
+
+          <div class="space-y-4">
+              <h4 class="font-bold text-xs tracking-wider uppercase text-brand-gold">Contact Desk</h4>
+              <p class="text-xs text-stone-400"><i class="fa-solid fa-location-dot mr-2 text-brand-gold"></i> East Bangalore IT Corridor, Bengaluru, KA</p>
+              <p class="text-xs text-stone-400"><i class="fa-solid fa-phone mr-2 text-brand-gold"></i> +91 80 4991 2200</p>
+              <p class="text-xs text-stone-400"><i class="fa-solid fa-envelope mr-2 text-brand-gold"></i> admissions@ebis.edu.in</p>
+          </div>
+
+          <div class="space-y-4">
+              <h4 class="font-bold text-xs tracking-wider uppercase text-brand-gold">Global Affiliations</h4>
+              <p class="text-xs text-stone-400 leading-relaxed">Authorized International Baccalaureate (IB) World Campus and Cambridge International Pathway provider.</p>
+              <div class="flex space-x-2">
+                  <span class="bg-brand-green px-2 py-0.5 text-[9px] font-semibold text-brand-gold rounded">IBDP</span>
+                  <span class="bg-brand-green px-2 py-0.5 text-[9px] font-semibold text-brand-gold rounded">CAIE</span>
+                  <span class="bg-brand-green px-2 py-0.5 text-[9px] font-semibold text-brand-gold rounded">CBSE</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-brand-green/30 flex flex-col sm:flex-row justify-between items-center text-[11px] text-stone-400">
+          <p>&copy; 2026 East Bangalore International School. All rights reserved.</p>
+          <div class="flex space-x-4 mt-4 sm:mt-0">
+              <a href="#" class="hover:text-brand-gold">Privacy Directives</a>
+              <a href="#" class="hover:text-brand-gold">Terms of Use</a>
+          </div>
+      </div>
+  </footer>
+
+
+
+<script>
+  // scroll reveal
+  const obs = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); } });
+  }, {threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+  // header solid state
+  const header = document.getElementById('siteHeader');
+  const toggleHeader = ()=>{
+    if(window.scrollY > 60){ header.classList.add('scrolled'); }
+    else{ header.classList.remove('scrolled'); }
+  };
+  toggleHeader();
+  window.addEventListener('scroll', toggleHeader, {passive:true});
+
+  // mobile menu
+  const mobileMenu = document.getElementById('mobileMenu');
+  document.getElementById('menuOpen').addEventListener('click', ()=> mobileMenu.classList.add('open'));
+  document.getElementById('menuClose').addEventListener('click', ()=> mobileMenu.classList.remove('open'));
+  mobileMenu.querySelectorAll('a').forEach(a=> a.addEventListener('click', ()=> mobileMenu.classList.remove('open')));
+
+  // search overlay
+  const searchOverlay = document.getElementById('searchOverlay');
+  const searchInput = searchOverlay.querySelector('input');
+  document.getElementById('searchOpen').addEventListener('click', ()=>{
+    searchOverlay.classList.add('open');
+    setTimeout(()=> searchInput.focus(), 200);
+  });
+  document.getElementById('searchClose').addEventListener('click', ()=> searchOverlay.classList.remove('open'));
+  document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape'){ searchOverlay.classList.remove('open'); mobileMenu.classList.remove('open'); } });
+
+  // animated stat counters
+  const counters = document.querySelectorAll('.count');
+  const statsObs = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        counters.forEach(el=>{
+          const target = parseInt(el.dataset.target, 10);
+          const suffix = el.dataset.suffix || '';
+          const duration = 1400;
+          const start = performance.now();
+          const step = (now)=>{
+            const p = Math.min((now - start) / duration, 1);
+            const eased = 1 - Math.pow(1 - p, 3);
+            el.textContent = Math.round(eased * target) + suffix;
+            if(p < 1){ requestAnimationFrame(step); }
+          };
+          requestAnimationFrame(step);
+        });
+        statsObs.disconnect();
+      }
+    });
+  }, {threshold:0.4});
+  const statsStrip = document.getElementById('statsStrip');
+  if(statsStrip){ statsObs.observe(statsStrip); }
+
+  // testimonial carousel
+  const testiTrack = document.getElementById('testiTrack');
+  const testiPrev = document.getElementById('testiPrev');
+  const testiNext = document.getElementById('testiNext');
+  const testiBarFill = document.getElementById('testiBarFill');
+  const testiCurrent = document.getElementById('testiCurrent');
+  const testiTotal = document.getElementById('testiTotal');
+
+  if(testiTrack){
+    const cards = testiTrack.querySelectorAll('.testi-card');
+    const total = cards.length;
+    if(testiTotal) testiTotal.textContent = total;
+
+    const getCardStep = ()=>{
+      const card = cards[0];
+      if(!card) return 0;
+      const style = getComputedStyle(testiTrack);
+      const gap = parseFloat(style.columnGap || style.gap) || 22;
+      return card.offsetWidth + gap;
+    };
+
+    const getActiveIndex = ()=>{
+      const step = getCardStep();
+      if(!step) return 0;
+      return Math.round(testiTrack.scrollLeft / step);
+    };
+
+    const updateTestiUI = ()=>{
+      const step = getCardStep();
+      const maxScroll = testiTrack.scrollWidth - testiTrack.clientWidth;
+      const idx = getActiveIndex();
+      const progress = maxScroll > 0 ? (testiTrack.scrollLeft / maxScroll) * 100 : 100;
+
+      if(testiBarFill) testiBarFill.style.width = progress + '%';
+      if(testiCurrent) testiCurrent.textContent = Math.min(idx + 1, total);
+      if(testiPrev) testiPrev.disabled = testiTrack.scrollLeft <= 4;
+      if(testiNext) testiNext.disabled = testiTrack.scrollLeft >= maxScroll - 4;
+    };
+
+    const scrollTesti = (dir)=>{
+      testiTrack.scrollBy({ left: dir * getCardStep(), behavior: 'smooth' });
+    };
+
+    if(testiPrev) testiPrev.addEventListener('click', ()=> scrollTesti(-1));
+    if(testiNext) testiNext.addEventListener('click', ()=> scrollTesti(1));
+
+    testiTrack.addEventListener('scroll', updateTestiUI, {passive:true});
+    window.addEventListener('resize', updateTestiUI, {passive:true});
+
+    // drag-to-scroll
+    let isDown = false, startX = 0, scrollStart = 0;
+    testiTrack.addEventListener('mousedown', (e)=>{
+      isDown = true;
+      testiTrack.classList.add('is-dragging');
+      startX = e.pageX;
+      scrollStart = testiTrack.scrollLeft;
+    });
+    window.addEventListener('mouseup', ()=>{
+      isDown = false;
+      testiTrack.classList.remove('is-dragging');
+    });
+    testiTrack.addEventListener('mousemove', (e)=>{
+      if(!isDown) return;
+      e.preventDefault();
+      testiTrack.scrollLeft = scrollStart - (e.pageX - startX);
+    });
+
+    // keyboard nav when track is focused
+    testiTrack.addEventListener('keydown', (e)=>{
+      if(e.key === 'ArrowLeft'){ e.preventDefault(); scrollTesti(-1); }
+      if(e.key === 'ArrowRight'){ e.preventDefault(); scrollTesti(1); }
+    });
+
+    // gentle auto-advance (pauses on hover/focus)
+    let autoTimer;
+    const startAuto = ()=>{
+      clearInterval(autoTimer);
+      autoTimer = setInterval(()=>{
+        const maxScroll = testiTrack.scrollWidth - testiTrack.clientWidth;
+        if(testiTrack.scrollLeft >= maxScroll - 4){
+          testiTrack.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          scrollTesti(1);
+        }
+      }, 5500);
+    };
+    const stopAuto = ()=> clearInterval(autoTimer);
+    testiTrack.addEventListener('mouseenter', stopAuto);
+    testiTrack.addEventListener('mouseleave', startAuto);
+    testiTrack.addEventListener('focusin', stopAuto);
+    testiTrack.addEventListener('focusout', startAuto);
+
+    updateTestiUI();
+    if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      startAuto();
+    }
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Architecture | East Bangalore International School (EBIS)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            darkGreen: '#063B23',
+                            green: '#094F29',
+                            lightGreen: '#0D6E3B',
+                            cream: '#FAF7F0',
+                            darkCream: '#F1EAD9',
+                            gold: '#D4A316',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="font-sans text-stone-800 bg-brand-cream overflow-x-hidden">
+
+    <!-- FIXED NAVIGATION HEADER -->
+    <header class="sticky top-0 z-50 bg-brand-darkGreen/95 backdrop-blur-md text-white border-b border-brand-green/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3">
+                <div
+                    class="w-10 h-10 bg-brand-gold rounded-full flex items-center justify-center font-serif font-bold text-brand-darkGreen text-xl">
+                    E</div>
+                <div>
+                    <span class="block font-serif font-bold text-lg leading-tight tracking-wide">EBIS</span>
+                    <span class="block text-xs text-brand-cream/80 tracking-widest uppercase">East Bangalore</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex items-center space-x-6 text-xs font-medium tracking-wide uppercase">
+                <a href="aboutus.html" class="hover:text-brand-gold transition-colors">About Us</a>
+                <a href="admission.html" class="hover:text-brand-gold transition-colors">Admission</a>
+                <a href="curriculam.html" class="hover:text-brand-gold transition-colors">Curriculam</a>
+                <a href="campus.html" class="hover:text-brand-gold transition-colors">Campus</a>
+                <a href="contactus.html" class="hover:text-brand-gold transition-colors">Contact Us</a>
+            </nav>
+
+            <div class="hidden lg:flex items-center space-x-4">
+                <button onclick="openModal()"
+                    class="border border-brand-cream hover:bg-brand-cream hover:text-brand-darkGreen px-4 py-2 text-xs font-medium uppercase tracking-wider transition-all duration-300">Request
+                    Info</button>
+                <a href="/apply.html"
+                    class="bg-brand-gold text-brand-darkGreen hover:bg-white hover:text-brand-green px-5 py-2 text-xs font-bold uppercase tracking-wider transition-all duration-300 shadow-md">Apply
+                    Now</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="lg:hidden text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu"
+            class="hidden lg:hidden bg-brand-darkGreen border-t border-brand-green/35 px-4 py-6 space-y-4 shadow-xl">
+            <a href="#portals" class="block text-brand-cream hover:text-brand-gold text-sm py-1">Grade Portals</a>
+            <a href="#criteria" class="block text-brand-cream hover:text-brand-gold text-sm py-1">Eligibility & Docs</a>
+            <a href="#process" class="block text-brand-cream hover:text-brand-gold text-sm py-1">Admission Process</a>
+            <a href="#tuition" class="block text-brand-cream hover:text-brand-gold text-sm py-1">Tuition & Scholar</a>
+            <a href="#enquire" class="block text-brand-cream hover:text-brand-gold text-sm py-1">Global Enquiries</a>
+            <div class="pt-4 border-t border-brand-green flex flex-col space-y-3">
+                <button onclick="openModal()"
+                    class="w-full text-center border border-brand-cream text-white py-2 text-sm font-medium">Request
+                    Info</button>
+                <a href="#portals"
+                    class="w-full text-center bg-brand-gold text-brand-darkGreen py-2 text-sm font-bold">Apply Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 1: HERO BANNER -->
+    <section class="relative bg-brand-darkGreen text-white py-24 lg:py-32 overflow-hidden">
+        <div
+            class="absolute inset-0 bg-[url('https://dpsbangaloresouth.edu.in/wp-content/uploads/2025/01/DSC03976-1-scaled.jpg')] bg-cover bg-center  opacity-50">
+        </div>
+        
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <span
+                class="inline-block bg-brand-gold/20 text-brand-gold font-bold text-xs tracking-widest uppercase px-3 py-1 border border-brand-gold/30">
+                Academic Rigor & Innovation
+            </span>
+            <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight max-w-4xl mx-auto">
+                Intellectual Foundations for <br>
+                <span class="italic text-brand-gold font-normal">Global Innovation.</span>
+            </h1>
+            <p class="text-sm sm:text-base text-brand-cream/80 max-w-2xl mx-auto font-light leading-relaxed">
+                Explore a highly coordinated, dual-pathway curriculum framework designed to turn childhood curiosity
+                into internationally certified academic mastery.
+            </p>
+            <div class="pt-4">
+                <a href="#framework"
+                    class="bg-brand-gold text-brand-darkGreen hover:bg-white font-bold px-6 py-3.5 transition-all text-xs tracking-wider uppercase">
+                    Review Curriculum Map
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: CURRICULUM FRAMEWORK MATRICES -->
+    <section id="framework" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-2">
+                <span class="text-brand-gold text-xs font-bold tracking-widest uppercase block">Accredited Tracks</span>
+                <h2 class="font-serif text-3xl font-bold text-brand-darkGreen">Academic Stream Portals</h2>
+                <div class="w-16 h-1 bg-brand-gold mx-auto mt-2"></div>
+                <p class="text-stone-600 text-xs">Our high-school tracks offer dual integrations, helping candidates
+                    match university goals with national and international benchmarks.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Track 1 -->
+                <div
+                    class="bg-brand-cream/40 border border-brand-darkCream rounded-xl p-6 flex flex-col justify-between shadow-sm">
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span
+                                class="bg-brand-green text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded">IB
+                                DP Path</span>
+                            <i class="fa-solid fa-globe text-brand-gold text-xl"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-brand-darkGreen">International Baccalaureate</h3>
+                        <p class="text-xs text-stone-600 leading-relaxed">Centered on deep critical reflection,
+                            self-directed extended research, and high international benchmarking across all traditional
+                            science and language groups.</p>
+                    </div>
+                    <div
+                        class="mt-6 pt-4 border-t border-brand-darkCream flex justify-between items-center text-[11px]">
+                        <span class="text-stone-500 font-medium">Grades XI - XII</span>
+                        <span class="text-brand-green font-bold uppercase tracking-wider">Global Standard</span>
+                    </div>
+                </div>
+
+                <!-- Track 2 -->
+                <div
+                    class="bg-brand-cream/40 border border-brand-darkCream rounded-xl p-6 flex flex-col justify-between shadow-sm">
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span
+                                class="bg-brand-green text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded">Cambridge
+                                CAIE</span>
+                            <i class="fa-solid fa-award text-brand-gold text-xl"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-brand-darkGreen">Cambridge Assessment</h3>
+                        <p class="text-xs text-stone-600 leading-relaxed">A flexible program structure focusing on
+                            strong analytical development, conceptual language mastery, and solid performance
+                            diagnostics in secondary math and science.</p>
+                    </div>
+                    <div
+                        class="mt-6 pt-4 border-t border-brand-darkCream flex justify-between items-center text-[11px]">
+                        <span class="text-stone-500 font-medium">Grades IX - X</span>
+                        <span class="text-brand-green font-bold uppercase tracking-wider">IGCSE Framework</span>
+                    </div>
+                </div>
+
+                <!-- Track 3 -->
+                <div
+                    class="bg-brand-cream/40 border border-brand-darkCream rounded-xl p-6 flex flex-col justify-between shadow-sm">
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span
+                                class="bg-brand-darkGreen text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded">National
+                                Track</span>
+                            <i class="fa-solid fa-landmark text-brand-gold text-xl"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-brand-darkGreen">CBSE Senior Board</h3>
+                        <p class="text-xs text-stone-600 leading-relaxed">Combines foundational national course
+                            requirements with contemporary technical updates, keeping student training aligned with top
+                            Indian competitive exams.</p>
+                    </div>
+                    <div
+                        class="mt-6 pt-4 border-t border-brand-darkCream flex justify-between items-center text-[11px]">
+                        <span class="text-stone-500 font-medium">Grades IX - XII</span>
+                        <span class="text-brand-green font-bold uppercase tracking-wider">All-India Alignment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: EARLY YEARS PROGRAMME -->
+    <section id="earlyyears" class="py-20 bg-brand-cream border-t border-brand-darkCream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <span class="text-brand-gold text-xs font-bold tracking-widest uppercase block">The Foundation
+                    Step</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-darkGreen">Early Years Programme
+                    (Nursery - KG)</h2>
+                <div class="w-12 h-1 bg-brand-gold"></div>
+                <p class="text-sm text-stone-600 leading-relaxed">
+                    Our early childhood framework uses a blended Montessori and IB Primary Years format to prioritize
+                    active personal discovery over passive instruction. Early learning models focus heavily on motor
+                    control, vocabulary building, and basic teamwork.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                    <div class="bg-white p-4 border border-brand-darkCream/60 rounded-lg flex items-start space-x-3">
+                        <i class="fa-solid fa-shapes text-brand-green text-base mt-1"></i>
+                        <div>
+                            <h4 class="text-xs font-bold text-brand-darkGreen uppercase">Sensory Literacy</h4>
+                            <p class="text-[11px] text-stone-500 mt-0.5">Hands-on objects to help young learners pick up
+                                fundamental math and vocabulary logic naturally.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 border border-brand-darkCream/60 rounded-lg flex items-start space-x-3">
+                        <i class="fa-solid fa-face-smile text-brand-green text-base mt-1"></i>
+                        <div>
+                            <h4 class="text-xs font-bold text-brand-darkGreen uppercase">Socio-Emotional Care</h4>
+                            <p class="text-[11px] text-stone-500 mt-0.5">Encourages sharing, independent choices, and
+                                basic self-regulation in a secure classroom setting.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-5">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=800"
+                    alt="Early Years Exploration"
+                    class="w-full h-80 object-cover rounded-xl shadow-md border-4 border-white">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: SPECIALIST SUBJECTS MATRIX -->
+    <section id="specialists" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-2">
+                <span class="text-brand-gold text-xs font-bold tracking-widest uppercase block">Targeted
+                    Capabilities</span>
+                <h2 class="font-serif text-3xl font-bold text-brand-darkGreen">Specialist Subjects Pillar</h2>
+                <div class="w-16 h-1 bg-brand-gold mx-auto mt-2"></div>
+                <p class="text-stone-600 text-xs">Four integrated specialist domains provide deep-dive skill development
+                    beyond general core instruction.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Specialist 1 -->
+                <div
+                    class="border border-brand-darkCream rounded-xl p-6 bg-brand-cream/20 hover:bg-white hover:shadow-md transition-all">
+                    <div
+                        class="w-12 h-12 rounded-full bg-brand-green/10 text-brand-green flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-microscope"></i></div>
+                    <h3 class="font-serif font-bold text-lg text-brand-darkGreen mb-2">STEM & Analytics</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed">Includes regular hours in dedicated robotics
+                        centers, coding workshops, and student labs to learn basic programming and step-by-step
+                        problem-solving early on.</p>
+                </div>
+                <!-- Specialist 2 -->
+                <div
+                    class="border border-brand-darkCream rounded-xl p-6 bg-brand-cream/20 hover:bg-white hover:shadow-md transition-all">
+                    <div
+                        class="w-12 h-12 rounded-full bg-brand-green/10 text-brand-green flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-palette"></i></div>
+                    <h3 class="font-serif font-bold text-lg text-brand-darkGreen mb-2">Creative Arts</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed">Covers studio fine arts, pottery wheel training,
+                        and theater productions to help students practice public speaking and fine-tune their creative
+                        talents.</p>
+                </div>
+                <!-- Specialist 3 -->
+                <div
+                    class="border border-brand-darkCream rounded-xl p-6 bg-brand-cream/20 hover:bg-white hover:shadow-md transition-all">
+                    <div
+                        class="w-12 h-12 rounded-full bg-brand-green/10 text-brand-green flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-person-swimming"></i></div>
+                    <h3 class="font-serif font-bold text-lg text-brand-darkGreen mb-2">Elite Sports</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed">Utilizes professional athletic facilities, heated
+                        competition pools, and squash courts to instill core health habits and real leadership
+                        experience.</p>
+                </div>
+                <!-- Specialist 4 -->
+                <div
+                    class="border border-brand-darkCream rounded-xl p-6 bg-brand-cream/20 hover:bg-white hover:shadow-md transition-all">
+                    <div
+                        class="w-12 h-12 rounded-full bg-brand-green/10 text-brand-green flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-language"></i></div>
+                    <h3 class="font-serif font-bold text-lg text-brand-darkGreen mb-2">Global Languages</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed">Offers advanced multilingual tracks, including
+                        French, Spanish, German, and local language options to cultivate solid cross-border
+                        communication skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: TEACHING METHODOLOGY -->
+    <section id="methodology" class="py-20 bg-brand-darkGreen text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-4">
+                    <span class="text-brand-gold text-xs font-bold tracking-widest uppercase block">Instruction
+                        Delivery</span>
+                    <h2 class="font-serif text-3xl font-bold leading-tight">Teaching Methodology: How We Educate</h2>
+                    <div class="w-12 h-1 bg-brand-gold"></div>
+                    <p class="text-brand-cream/70 text-xs leading-relaxed">
+                        Our classrooms move past old-school rote memorization by emphasizing collaborative learning,
+                        group experiments, and cross-discipline projects that teach real-world concept application.
+                    </p>
+                </div>
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6 text-xs">
+                    <div class="bg-brand-green/40 p-5 border border-brand-green/60 rounded-lg space-y-2">
+                        <h4 class="font-serif text-brand-gold font-bold text-base">Inquiry-Led Projects</h4>
+                        <p class="text-brand-cream/80 leading-relaxed">Teachers introduce primary concepts via
+                            open-ended questions, encouraging students to form hypotheses, gather data, and present
+                            discoveries as a team.</p>
+                    </div>
+                    <div class="bg-brand-green/40 p-5 border border-brand-green/60 rounded-lg space-y-2">
+                        <h4 class="font-serif text-brand-gold font-bold text-base">Differentiated Class Tracks</h4>
+                        <p class="text-brand-cream/80 leading-relaxed">Maintains an 8:1 student-to-teacher ratio,
+                            allowing our faculty to adjust learning speeds and assignment difficulty to fit individual
+                            strengths.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: BEYOND THE CLASSROOM -->
+    <section id="beyond" class="py-20 bg-brand-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-2">
+                <span class="text-brand-gold text-xs font-bold tracking-widest uppercase block">Real-World
+                    Integration</span>
+                <h2 class="font-serif text-3xl font-bold text-brand-darkGreen">Beyond the Classroom Limits</h2>
+                <div class="w-16 h-1 bg-brand-gold mx-auto mt-2"></div>
+                <p class="text-stone-600 text-xs">Extending student focus past traditional desks through structured
+                    field learning, active leadership roles, and regular community service.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-brand-darkCream">
+                    <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80&w=600"
+                        alt="Field Research" class="w-full h-48 object-cover">
+                    <div class="p-6 space-y-2">
+                        <h4 class="font-serif font-bold text-brand-darkGreen text-lg">Ecological Fieldwork</h4>
+                        <p class="text-xs text-stone-500 leading-relaxed">Students make regular field visits to nearby
+                            tech labs, biodiversity parks, and manufacturing centers to connect theoretical concepts
+                            with operational real-world practices.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-brand-darkCream">
+                    <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=600"
+                        alt="MUN Debate" class="w-full h-48 object-cover">
+                    <div class="p-6 space-y-2">
+                        <h4 class="font-serif font-bold text-brand-darkGreen text-lg">Model UN & Advocacy</h4>
+                        <p class="text-xs text-stone-500 leading-relaxed">Provides regular speech, debate, and
+                            international diplomacy exercises to polish student presentation skills and deepen general
+                            current events awareness.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-brand-darkCream">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=600"
+                        alt="Civic Service" class="w-full h-48 object-cover">
+                    <div class="p-6 space-y-2">
+                        <h4 class="font-serif font-bold text-brand-darkGreen text-lg">Social Impact Initiatives</h4>
+                        <p class="text-xs text-stone-500 leading-relaxed">Mandatory community outreach programs that
+                            foster a reliable sense of personal responsibility, social awareness, and helpful civic
+                            action.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="curriculum-approach" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-2">
+            <span class="text-brand-gold text-xs font-bold tracking-widest uppercase block">
+                Our Learning Approach
+            </span>
+
+            <h2 class="font-serif text-3xl font-bold text-brand-darkGreen">
+                A Curriculum That Inspires Every Learner
+            </h2>
+
+            <div class="w-16 h-1 bg-brand-gold mx-auto mt-2"></div>
+
+            <p class="text-stone-600 text-xs">
+                Our internationally aligned curriculum empowers students to become confident thinkers, compassionate leaders, and lifelong learners through engaging, inquiry-driven education.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+            <!-- Left Content -->
+            <div class="space-y-6">
+
+                <div class="border-l-4 border-brand-gold pl-4 space-y-1">
+                    <h3 class="font-serif font-bold text-xl text-brand-darkGreen">
+                        Inquiry-Based Learning
+                    </h3>
+                    <p class="text-xs text-stone-600 leading-relaxed">
+                        Students actively explore real-world concepts through questions,
+                        research, collaboration, and hands-on experiences that encourage
+                        curiosity and independent thinking.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-brand-green pl-4 space-y-1">
+                    <h3 class="font-serif font-bold text-xl text-brand-darkGreen">
+                        Personalized Learning Pathways
+                    </h3>
+                    <p class="text-xs text-stone-600 leading-relaxed">
+                        Every learner follows a personalized academic journey with
+                        differentiated instruction, continuous feedback, and meaningful
+                        opportunities to achieve their full potential.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-brand-green pl-4 space-y-1">
+                    <h3 class="font-serif font-bold text-xl text-brand-darkGreen">
+                        Future-Ready Skills
+                    </h3>
+                    <p class="text-xs text-stone-600 leading-relaxed">
+                        Critical thinking, creativity, communication, collaboration,
+                        leadership, and digital literacy are embedded throughout every
+                        stage of the curriculum.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Right Image -->
+            <div class="relative">
+
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=800"
+                    alt="Students engaged in collaborative learning"
+                    class="rounded-xl shadow-md w-full h-80 object-cover">
+
+                <div
+                    class="absolute -bottom-6 -left-6 bg-brand-darkGreen text-brand-gold p-4 rounded-xl shadow-lg border border-brand-green max-w-xs hidden sm:block text-xs">
+
+                    <p class="font-bold uppercase tracking-wide mb-1">
+                        <i class="fa-solid fa-graduation-cap mr-1"></i>
+                        Curriculum Highlights
+                    </p>
+
+                    <p class="text-brand-cream/80 font-light">
+                        A balanced curriculum that combines academic excellence,
+                        experiential learning, global perspectives, and character
+                        development to prepare students for lifelong success.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- BOOK A CAMPUS TOUR SECTION -->
+    <section class="py-16 bg-brand-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Main Wrapper with rounded corners and card-style shadow -->
+            <div
+                class="bg-white rounded-[2rem] overflow-hidden shadow-xl border border-brand-darkCream/40 grid grid-cols-1 lg:grid-cols-12 min-h-[500px]">
+
+                <!-- COLUMN 1: BRAND INTRO (Span 3) -->
+                <div
+                    class="lg:col-span-4 bg-brand-darkGreen p-8 lg:p-12 flex flex-col justify-between text-white relative overflow-hidden">
+                    <!-- Background visual elements -->
+                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-brand-green/25 rounded-full blur-2xl"></div>
+
+                    <div class="space-y-4 relative z-10">
+                        <h3 class="font-serif text-3xl lg:text-4xl font-medium tracking-tight leading-tight">
+                            See It.<br>Feel It.<br>
+                            <span class="text-brand-gold font-bold">Experience It.</span>
+                        </h3>
+                        <div class="w-8 h-[2px] bg-brand-gold"></div>
+                        <p class="text-stone-300 text-xs leading-relaxed font-light">
+                            Book a campus tour and take the first step towards an extraordinary learning journey.
+                        </p>
+                    </div>
+
+                    <!-- Custom stylized vector line-drawing of campus at the bottom -->
+                    <div class="pt-12 relative z-10 opacity-80">
+                        <svg class="w-full h-auto text-brand-gold/80" viewBox="0 0 300 100" fill="none"
+                            stroke="currentColor" stroke-width="1.2">
+                            <!-- Main Central Building with Tower -->
+                            <path d="M 200,95 L 200,40 L 230,40 L 230,95" />
+                            <path d="M 230,95 L 230,25 L 250,25 L 250,95" />
+                            <!-- Tower Roof Cone and Flag -->
+                            <path d="M 230,25 L 240,10 L 250,25" />
+                            <path d="M 240,10 L 240,2 L 247,5 L 240,8" fill="currentColor" />
+                            <!-- Tower Window details -->
+                            <rect x="236" y="32" width="8" height="12" rx="4" />
+                            <rect x="236" y="52" width="8" height="12" rx="4" />
+
+                            <!-- Left Wing Classroom Blocks -->
+                            <path d="M 200,50 L 100,50 L 100,95" />
+                            <path d="M 140,50 L 140,95" />
+                            <path d="M 170,50 L 170,95" />
+                            <path d="M 100,95 L 200,95" />
+
+                            <!-- Window grids on Left Wing -->
+                            <rect x="110" y="58" width="18" height="10" rx="1" />
+                            <rect x="110" y="75" width="18" height="10" rx="1" />
+                            <rect x="148" y="58" width="14" height="10" rx="1" />
+                            <rect x="148" y="75" width="14" height="10" rx="1" />
+                            <rect x="178" y="58" width="14" height="10" rx="1" />
+                            <rect x="178" y="75" width="14" height="10" rx="1" />
+
+                            <!-- Right Wing Block -->
+                            <path d="M 250,45 L 285,45 L 285,95" />
+                            <rect x="260" y="54" width="15" height="12" rx="1" />
+                            <rect x="260" y="74" width="15" height="12" rx="1" />
+
+                            <!-- Archway Entrance -->
+                            <path d="M 206,95 L 206,75 C 206,68 224,68 224,75 L 224,95" fill="none" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- COLUMN 2: BOOKING FORM (Span 5) -->
+                <div class="lg:col-span-8 p-8 lg:p-12 flex flex-col justify-center">
+                    <form action="#" method="POST" class="space-y-5">
+                        <h2 class="font-serif text-2xl lg:text-3xl font-bold text-brand-darkGreen mb-2">
+                            Book a Campus Tour
+                        </h2>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <!-- Parent Name Input -->
+                            <div class="space-y-1">
+                                <input type="text" required placeholder="Parent Name"
+                                    class="w-full px-4 py-3 text-xs bg-stone-50 border border-brand-darkCream/80 focus:border-brand-green rounded-lg outline-none transition-colors text-stone-800 placeholder-stone-400">
+                            </div>
+                            <!-- Email Address Input -->
+                            <div class="space-y-1">
+                                <input type="email" required placeholder="Email Address"
+                                    class="w-full px-4 py-3 text-xs bg-stone-50 border border-brand-darkCream/80 focus:border-brand-green rounded-lg outline-none transition-colors text-stone-800 placeholder-stone-400">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <!-- Phone Number Input -->
+                            <div class="space-y-1">
+                                <input type="tel" required placeholder="Phone Number"
+                                    class="w-full px-4 py-3 text-xs bg-stone-50 border border-brand-darkCream/80 focus:border-brand-green rounded-lg outline-none transition-colors text-stone-800 placeholder-stone-400">
+                            </div>
+                            <!-- Student Name Input -->
+                            <div class="space-y-1">
+                                <input type="text" required placeholder="Student Name"
+                                    class="w-full px-4 py-3 text-xs bg-stone-50 border border-brand-darkCream/80 focus:border-brand-green rounded-lg outline-none transition-colors text-stone-800 placeholder-stone-400">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <!-- Grade Level Selector -->
+                            <div class="space-y-1 relative">
+                                <select required
+                                    class="w-full px-4 py-3 text-xs bg-stone-50 border border-brand-darkCream/80 focus:border-brand-green rounded-lg outline-none transition-colors text-stone-600 appearance-none">
+                                    <option value="" disabled selected hidden>Grade Interested In</option>
+                                    <option value="early-years">Early Years (Pre-K - KG)</option>
+                                    <option value="primary">Primary School (Grades 1-5)</option>
+                                    <option value="middle">Middle School (Grades 6-8)</option>
+                                    <option value="high">High School (Grades 9-12)</option>
+                                </select>
+                                <div
+                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-stone-400">
+                                    <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                                </div>
+                            </div>
+                            <!-- Preferred Date Input -->
+                            <div class="space-y-1 relative">
+                                <input type="date" required
+                                    class="w-full px-4 py-3 text-xs bg-stone-50 border border-brand-darkCream/80 focus:border-brand-green rounded-lg outline-none transition-colors text-stone-500">
+                            </div>
+                        </div>
+
+                        <!-- Message Input -->
+                        <div class="space-y-1">
+                            <textarea rows="3" placeholder="Message (Optional)"
+                                class="w-full px-4 py-3 text-xs bg-stone-50 border border-brand-darkCream/80 focus:border-brand-green rounded-lg outline-none transition-colors text-stone-800 placeholder-stone-400 resize-none"></textarea>
+                        </div>
+
+                        <!-- Submit Action Button -->
+                        <div class="pt-2">
+                            <button type="submit"
+                                class="bg-brand-gold text-brand-darkGreen hover:bg-brand-green hover:text-white px-8 py-3.5 text-xs font-bold uppercase tracking-wider rounded-lg transition-all duration-300 flex items-center shadow-md shadow-brand-gold/15 group">
+                                <span>Submit Request</span>
+                                <i
+                                    class="fa-solid fa-arrow-right ml-2.5 transform group-hover:translate-x-1 transition-transform"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-brand-darkGreen text-white/90 border-t border-brand-green/30 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                    <div
+                        class="w-8 h-8 bg-brand-gold rounded-full flex items-center justify-center font-serif font-bold text-brand-darkGreen text-base">
+                        E</div>
+                    <span class="font-serif font-bold text-lg tracking-wide">EBIS</span>
+                </div>
+                <p class="text-stone-400 text-xs leading-relaxed">
+                    Accredited international standard campus offering holistic development pathways to modern global
+                    leaders.
+                </p>
+                <div class="flex space-x-4 pt-2">
+                    <a href="#" class="text-brand-gold hover:text-white"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="text-brand-gold hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-brand-gold hover:text-white"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-bold text-xs tracking-wider uppercase text-brand-gold">Admissions Channels</h4>
+                <ul class="space-y-2 text-xs text-stone-400">
+                    <li><a href="#portals" class="hover:text-brand-gold">Nursery - Grade IX Portal</a></li>
+                    <li><a href="#portals" class="hover:text-brand-gold">Grade XI Senior Portal</a></li>
+                    <li><a href="#criteria" class="hover:text-brand-gold">Age Eligibility Norms</a></li>
+                    <li><a href="#criteria" class="hover:text-brand-gold">Document Dossier Pack</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-bold text-xs tracking-wider uppercase text-brand-gold">Contact Desk</h4>
+                <p class="text-xs text-stone-400"><i class="fa-solid fa-location-dot mr-2 text-brand-gold"></i> East
+                    Bangalore IT Corridor, Bengaluru, KA</p>
+                <p class="text-xs text-stone-400"><i class="fa-solid fa-phone mr-2 text-brand-gold"></i> +91 80 4991
+                    2200</p>
+                <p class="text-xs text-stone-400"><i class="fa-solid fa-envelope mr-2 text-brand-gold"></i>
+                    admissions@ebis.edu.in</p>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-bold text-xs tracking-wider uppercase text-brand-gold">Global Affiliations</h4>
+                <p class="text-xs text-stone-400 leading-relaxed">Authorized International Baccalaureate (IB) World
+                    Campus and Cambridge International Pathway provider.</p>
+                <div class="flex space-x-2">
+                    <span
+                        class="bg-brand-green px-2 py-0.5 text-[9px] font-semibold text-brand-gold rounded">IBDP</span>
+                    <span
+                        class="bg-brand-green px-2 py-0.5 text-[9px] font-semibold text-brand-gold rounded">CAIE</span>
+                    <span
+                        class="bg-brand-green px-2 py-0.5 text-[9px] font-semibold text-brand-gold rounded">CBSE</span>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-brand-green/30 flex flex-col sm:flex-row justify-between items-center text-[11px] text-stone-400">
+            <p>&copy; 2026 East Bangalore International School. All rights reserved.</p>
+            <div class="flex space-x-4 mt-4 sm:mt-0">
+                <a href="#" class="hover:text-brand-gold">Privacy Directives</a>
+                <a href="#" class="hover:text-brand-gold">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE MENU SWITCH LOGIC -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+    </script>
+</body>
+
+</html>

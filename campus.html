@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Life: The Future of Learning | East Bangalore International School (EBIS)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            darkGreen: '#063B23',
+                            green: '#094F29',
+                            lightGreen: '#0D6E3B',
+                            cream: '#FAF7F0',
+                            darkCream: '#F1EAD9',
+                            gold: '#D4A316',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="font-sans text-stone-800 bg-brand-cream overflow-x-hidden">
+
+    <!-- NAVIGATION HEADER -->
+    <header class="sticky top-0 z-50 bg-brand-darkGreen/95 backdrop-blur-md text-white border-b border-brand-green/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div
+                    class="w-10 h-10 bg-brand-gold rounded-full flex items-center justify-center font-serif font-bold text-brand-darkGreen text-xl">
+                    E</div>
+                <div>
+                    <span class="block font-serif font-bold text-lg leading-tight tracking-wide">EBIS</span>
+                    <span class="block text-xs text-brand-cream/80 tracking-widest uppercase">East Bangalore</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center space-x-5 text-[11px] font-semibold tracking-wider uppercase">
+                <a href="#tomorrow" class="hover:text-brand-gold transition-colors">Campus of Tomorrow</a>
+                <a href="#smart-experience" class="hover:text-brand-gold transition-colors">Smart Tech</a>
+                <a href="#studios" class="hover:text-brand-gold transition-colors">Future Studios</a>
+                <a href="#discovery" class="hover:text-brand-gold transition-colors">Wonder Zones</a>
+                <a href="#green-living" class="hover:text-brand-gold transition-colors">Green Living</a>
+            </nav>
+
+            <div class="hidden lg:flex items-center">
+                <a href="admission.html"
+                    class="bg-brand-gold text-brand-darkGreen hover:bg-white hover:text-brand-green px-5 py-2 text-xs font-bold uppercase tracking-wider transition-all duration-300 shadow-md">Schedule
+                    Tech Tour</a>
+            </div>
+
+            <!-- Mobile Menu Trigger -->
+            <button id="mobileMenuBtn" class="lg:hidden text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown -->
+        <div id="mobileMenu"
+            class="hidden lg:hidden bg-brand-darkGreen border-t border-brand-green/35 px-4 py-6 space-y-3 shadow-xl">
+            <a href="#tomorrow"
+                class="block text-brand-cream hover:text-brand-gold text-xs py-1 uppercase font-medium">Campus of
+                Tomorrow</a>
+            <a href="#smart-experience"
+                class="block text-brand-cream hover:text-brand-gold text-xs py-1 uppercase font-medium">Smart Tech</a>
+            <a href="#studios"
+                class="block text-brand-cream hover:text-brand-gold text-xs py-1 uppercase font-medium">Future
+                Studios</a>
+            <a href="#discovery"
+                class="block text-brand-cream hover:text-brand-gold text-xs py-1 uppercase font-medium">Wonder Zones</a>
+            <a href="#green-living"
+                class="block text-brand-cream hover:text-brand-gold text-xs py-1 uppercase font-medium">Green Living</a>
+        </div>
+    </header>
+
+    <!-- HERO: THE CAMPUS OF TOMORROW -->
+    <section id="tomorrow" class="relative bg-brand-darkGreen text-white py-24 lg:py-36 overflow-hidden">
+        <div
+            class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-brand-lightGreen via-brand-darkGreen to-brand-darkGreen">
+        </div>
+        <div
+            class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920')] bg-cover bg-center mix-blend-overlay opacity-25">
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <span
+                class="inline-block bg-brand-gold text-brand-darkGreen font-bold text-[10px] tracking-widest uppercase px-3 py-1 rounded">
+                The Campus of Tomorrow
+            </span>
+            <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight max-w-4xl mx-auto">
+                Where Nature Meets <br>
+                <span class="italic text-brand-gold font-normal">Next-Gen Innovation</span>
+            </h1>
+            <p class="text-xs sm:text-sm text-brand-cream/80 max-w-2xl mx-auto font-light leading-relaxed">
+                Welcome to a campus built for the future. We integrate ambient AI tools, responsive architectural
+                engineering, and natural biophilic green spaces to support a dynamic, forward-looking student lifestyle.
+            </p>
+        </div>
+    </section>
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+
+                <!-- Left Side Big Text (Column span 5) -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-brand-gold text-xs font-bold tracking-widest uppercase block">Architectural
+                        Intent</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-darkGreen leading-tight">
+                        Spaces Specially Sculpted for <span
+                            class="italic font-normal text-brand-gold">Unrestricted</span> Human Potential.
+                    </h2>
+                    <div class="w-12 h-0.5 bg-brand-gold"></div>
+                    <p class="text-xs text-stone-600 leading-relaxed">
+                        We believe physical architecture acts as a hidden teacher. Our campus layout avoids rigid right
+                        angles and dark hallways, favoring open sunlit glass paths and comfortable common areas that
+                        foster natural conversations.
+                    </p>
+                    <div class="pt-2">
+                        <blockquote class="border-l-2 border-brand-gold pl-4 font-serif italic text-stone-700 text-xs">
+                            "The flow of daylight across our common areas is intentionally planned to match natural
+                            focus patterns throughout the day."
+                        </blockquote>
+                    </div>
+                </div>
+
+                <!-- Right Side Asymmetric Image Cluster (Column span 7) -->
+                <div class="lg:col-span-7 grid grid-cols-12 gap-4 relative">
+                    <!-- Large Primary Image -->
+                    <div class="col-span-8 overflow-hidden rounded-2xl shadow-md">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800"
+                            alt="Sunlit Commons"
+                            class="w-full h-80 object-cover hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <!-- Offset Hanging Image -->
+                    <div class="col-span-4 overflow-hidden rounded-2xl shadow-md mt-12">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=400"
+                            alt="Library Alcove"
+                            class="w-full h-64 object-cover hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <!-- Bottom Floating Asset -->
+                    <div
+                        class="absolute -bottom-6 right-12 bg-brand-darkGreen text-white px-6 py-4 rounded-xl shadow-xl border border-brand-green max-w-xs text-left">
+                        <span class="text-brand-gold font-serif text-2xl font-bold block">85%</span>
+                        <span class="text-[10px] uppercase tracking-wider text-brand-cream/70 block">Daylight Autonomy
+                            Across All Active Learning Areas</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- DESIGN SECTION 3: TECH & ECO METRICS GRID -->
+    <section id="campus-philosophy" class="py-20 bg-brand-green text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <div class="lg:col-span-4 space-y-6">
+                    <span class="text-brand-gold text-xs font-bold tracking-widest uppercase block">Our Campus</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold leading-tight">
+                        A Campus Designed for Tomorrow
+                    </h2>
+                    <p class="text-brand-cream/80 text-sm leading-relaxed">
+                        Every corner of our campus is thoughtfully designed to inspire curiosity, creativity,
+                        collaboration, and wellbeing. Blending cutting-edge technology with sustainable architecture, we
+                        create an environment where every learner can thrive.
+                    </p>
+                    <a href="#campus-tour"
+                        class="inline-block bg-brand-gold text-brand-darkGreen hover:bg-white hover:text-brand-green font-bold px-6 py-3 text-sm transition-all duration-300">
+                        Explore Our Campus
+                    </a>
+                </div>
+
+                <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                    <!-- Card 1 -->
+                    <div
+                        class="p-6 bg-brand-darkGreen border border-brand-cream/10 rounded hover:border-brand-gold/40 transition-colors">
+                        <i class="fa-solid fa-building-columns text-brand-gold text-2xl mb-4"></i>
+                        <h3 class="font-serif font-bold text-lg text-white mb-2">
+                            Smart Learning Spaces
+                        </h3>
+                        <p class="text-stone-300 text-xs leading-relaxed">
+                            Flexible classrooms equipped with interactive technology encourage collaboration,
+                            creativity, and personalized learning.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="p-6 bg-brand-darkGreen border border-brand-cream/10 rounded hover:border-brand-gold/40 transition-colors">
+                        <i class="fa-solid fa-microchip text-brand-gold text-2xl mb-4"></i>
+                        <h3 class="font-serif font-bold text-lg text-white mb-2">
+                            Future Innovation Hub
+                        </h3>
+                        <p class="text-stone-300 text-xs leading-relaxed">
+                            Robotics, AI, coding, and makerspaces empower students to explore, invent, and solve
+                            real-world challenges.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="p-6 bg-brand-darkGreen border border-brand-cream/10 rounded hover:border-brand-gold/40 transition-colors">
+                        <i class="fa-solid fa-seedling text-brand-gold text-2xl mb-4"></i>
+                        <h3 class="font-serif font-bold text-lg text-white mb-2">
+                            Green & Sustainable Campus
+                        </h3>
+                        <p class="text-stone-300 text-xs leading-relaxed">
+                            Eco-friendly landscapes, solar energy, rainwater harvesting, and outdoor learning spaces
+                            connect students with nature.
+                        </p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div
+                        class="p-6 bg-brand-darkGreen border border-brand-cream/10 rounded hover:border-brand-gold/40 transition-colors">
+                        <i class="fa-solid fa-heart-pulse text-brand-gold text-2xl mb-4"></i>
+                        <h3 class="font-serif font-bold text-lg text-white mb-2">
+                            Safe & Happy Environment
+                        </h3>
+                        <p class="text-stone-300 text-xs leading-relaxed">
+                            Secure facilities, wellness spaces, sports amenities, and inclusive community areas ensure
+                            every child feels safe, valued, and inspired.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- EXPANDED CAMPUS TOUR & METRICS EXPLORER -->
+    <section class="py-20 bg-brand-cream relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+
+            <!-- FLOATING TOP METRICS BAR -->
+
+
+            <!-- MAIN LAYOUT GRAPHIC CONTAINER -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+
+                <!-- LEFT HAND CALL-TO-ACTION FRAME (Span 3) -->
+                <div class="lg:col-span-3 lg:sticky lg:top-28 space-y-5 py-4">
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-darkGreen leading-tight">
+                        Explore Our World-Class Campus
+                    </h2>
+                    <p class="text-stone-600 text-xs leading-relaxed font-light">
+                        Every corner of our environment is intentionally engineered to spark early curiosity, build
+                        confidence, and balance intensive study with active hands-on experimentation.
+                    </p>
+                    <div class="pt-2">
+                        <a href="#facilities"
+                            class="inline-flex items-center justify-between bg-brand-darkGreen text-white hover:bg-brand-gold hover:text-brand-darkGreen w-full sm:w-auto lg:w-full px-6 py-3.5 text-xs font-bold uppercase tracking-widest transition-all duration-300 shadow-sm rounded-lg group">
+                            <span>Explore Facilities</span>
+                            <i
+                                class="fa-solid fa-arrow-right ml-3 transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- RIGHT HAND GRID SHOWCASE (Span 9) -->
+                <div class="lg:col-span-9 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <!-- Card 1: Smart Classrooms -->
+                    <div class="bg-white border border-brand-darkCream/40 rounded-2xl overflow-hidden shadow-sm group">
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=400"
+                                alt="Smart Classrooms"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute top-3 left-3 w-9 h-9 rounded-full bg-brand-darkGreen/90 text-brand-gold border border-brand-gold/40 flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-laptop-code"></i></div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h4 class="font-serif font-bold text-sm text-brand-darkGreen">Smart Classrooms</h4>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: STEM Labs -->
+                    <div class="bg-white border border-brand-darkCream/40 rounded-2xl overflow-hidden shadow-sm group">
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=400"
+                                alt="STEM Labs"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute top-3 left-3 w-9 h-9 rounded-full bg-brand-darkGreen/90 text-brand-gold border border-brand-gold/40 flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-atom"></i></div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h4 class="font-serif font-bold text-sm text-brand-darkGreen">STEM & Innovation Labs</h4>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Library -->
+                    <div class="bg-white border border-brand-darkCream/40 rounded-2xl overflow-hidden shadow-sm group">
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=400"
+                                alt="Library"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute top-3 left-3 w-9 h-9 rounded-full bg-brand-darkGreen/90 text-brand-gold border border-brand-gold/40 flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-book-open"></i></div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h4 class="font-serif font-bold text-sm text-brand-darkGreen">Library & Commons</h4>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Performing Arts -->
+                    <div class="bg-white border border-brand-darkCream/40 rounded-2xl overflow-hidden shadow-sm group">
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&q=80&w=400"
+                                alt="Performing Arts"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute top-3 left-3 w-9 h-9 rounded-full bg-brand-darkGreen/90 text-brand-gold border border-brand-gold/40 flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-masks-theater"></i></div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h4 class="font-serif font-bold text-sm text-brand-darkGreen">Performing Arts Centre</h4>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Sports Complex -->
+                    <div class="bg-white border border-brand-darkCream/40 rounded-2xl overflow-hidden shadow-sm group">
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&q=80&w=400"
+                                alt="Sports Complex"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute top-3 left-3 w-9 h-9 rounded-full bg-brand-darkGreen/90 text-brand-gold border border-brand-gold/40 flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-ranking-star"></i></div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h4 class="font-serif font-bold text-sm text-brand-darkGreen">Sports Complex</h4>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Swimming Pool -->
+                    <div class="bg-white border border-brand-darkCream/40 rounded-2xl overflow-hidden shadow-sm group">
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1530745342582-0795f23ec976?auto=format&fit=crop&q=80&w=400"
+                                alt="Swimming Pool"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute top-3 left-3 w-9 h-9 rounded-full bg-brand-darkGreen/90 text-brand-gold border border-brand-gold/40 flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-person-swimming"></i></div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h4 class="font-serif font-bold text-sm text-brand-darkGreen">Swimming Pool</h4>
+                        </div>
+                    </div>
+
+                    <!-- Card 7: Art Studio -->
+                    <div class="bg-white border border-brand-darkCream/40 rounded-2xl overflow-hidden shadow-sm group">
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=400"
+                                alt="Art & Design Studio"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute top-3 left-3 w-9 h-9 rounded-full bg-brand-darkGreen/90 text-brand-gold border border-brand-gold/40 flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-bezier-curve"></i></div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h4 class="font-serif font-bold text-sm text-brand-darkGreen">Art & Design Studio</h4>
+                        </div>
+                    </div>
+
+                    <!-- Card 8: Cafeteria -->
+                    <div class="bg-white border border-brand-darkCream/40 rounded-2xl overflow-hidden shadow-sm group">
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=400"
+                                alt="Cafeteria & Nutrition"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute top-3 left-3 w-9 h-9 rounded-full bg-brand-darkGreen/90 text-brand-gold border border-brand-gold/40 flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-utensils"></i></div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h4 class="font-serif font-bold text-sm text-brand-darkGreen">Cafeteria & Nutrition</h4>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SMART CAMPUS EXPERIENCE & AI LEARNING SPACES -->
+    <section id="smart-experience" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-2">
+                <span class="text-brand-gold text-xs font-bold tracking-widest uppercase block">Intelligent
+                    Ecosystems</span>
+                <h2 class="font-serif text-3xl font-bold text-brand-darkGreen">Smart Campus Experience</h2>
+                <div class="w-16 h-1 bg-brand-gold mx-auto mt-2"></div>
+                <p class="text-stone-600 text-xs">Innovation lives around every corner. We use purposeful technology
+                    integrations to enrich daily learning workflows without replacing real human collaboration.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="border-l-4 border-brand-gold pl-4 space-y-1">
+                        <h3 class="font-serif font-bold text-xl text-brand-darkGreen">AI-Powered Learning Spaces</h3>
+                        <p class="text-xs text-stone-600 leading-relaxed">
+                            Our classrooms feature adaptive AV displays, integrated digital recording setups for easy
+                            lesson reviews, and automated real-time environmental tracking to keep focus levels high.
+                        </p>
+                    </div>
+                    <div class="border-l-4 border-brand-green pl-4 space-y-1">
+                        <h3 class="font-serif font-bold text-xl text-brand-darkGreen">Responsive Identity Passes</h3>
+                        <p class="text-xs text-stone-600 leading-relaxed">
+                            Secure NFC smart cards provide contactless library checkouts, coordinate secure lab access
+                            clearances, and help simplify student dining accounts seamlessly.
+                        </p>
+                    </div>
+                    <div class="border-l-4 border-brand-green pl-4 space-y-1">
+                        <h3 class="font-serif font-bold text-xl text-brand-darkGreen">Spaces That Inspire Young Minds
+                        </h3>
+                        <p class="text-xs text-stone-600 leading-relaxed">
+                            Movable, ergonomic furnishings transform our learning spaces quickly from structured seminar
+                            setups into agile, collaborative group presentation docks.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800"
+                        alt="Smart Lab Space" class="rounded-xl shadow-md w-full h-80 object-cover">
+                    <div
+                        class="absolute -bottom-6 -left-6 bg-brand-darkGreen text-brand-gold p-4 rounded-xl shadow-lg border border-brand-green max-w-xs hidden sm:block text-xs">
+                        <p class="font-bold uppercase tracking-wide mb-1"><i class="fa-solid fa-bolt mr-1"></i> Tech
+                            Metric</p>
+                        <p class="text-brand-cream/80 font-light">Campus-wide 1Gbps mesh networks support rapid sandbox
+                            prototyping and simulation building.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- DESIGN SECTION 1: ASYMMETRIC EDITORIAL CANVAS -->
+
+    <!-- BOOK A CAMPUS TOUR SECTION -->
+    <section class="py-16 bg-brand-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Main Wrapper with rounded corners and card-style shadow -->
+            <div
+                class="bg-white rounded-[2rem] overflow-hidden shadow-xl border border-brand-darkCream/40 grid grid-cols-1 lg:grid-cols-12 min-h-[500px]">
+
+                <!-- COLUMN 1: BRAND INTRO (Span 3) -->
+                <div
+                    class="lg:col-span-4 bg-brand-darkGreen p-8 lg:p-12 flex flex-col justify-between text-white relative overflow-hidden">
+                    <!-- Background visual elements -->
+                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-brand-green/25 rounded-full blur-2xl"></div>
+
+                    <div class="space-y-4 relative z-10">
+                        <h3 class="font-serif text-3xl lg:text-4xl font-medium tracking-tight leading-tight">
+                            See It.<br>Feel It.<br>
+                            <span class="text-brand-gold font-bold">Experience It.</span>
+                        </h3>
+                        <div class="w-8 h-[2px] bg-brand-gold"></div>
+                        <p class="text-stone-300 text-xs leading-relaxed font-light">
+                            Book a campus tour and take the first step towards an extraordinary learning journey.
+                        </p>
+                    </div>
+
+                    <!-- Custom stylized vector line-drawing of campus at the bottom -->
+                    <div class="pt-12 relative z-10 opacity-80">
+                        <svg class="w-full h-auto text-brand-gold/80" viewBox="0 0 300 100" fill="none"
+                            stroke="currentColor" stroke-width="1.2">
+                            <!-- Main Central Building with Tower -->
+                            <path d="M 200,95 L 200,40 L 230,40 L 230,95" />
+                            <path d="M 230,95 L 230,25 L 250,25 L 250,95" />
+                            <!-- Tower Roof Cone and Flag -->
+                            <path d="M 230,25 L 240,10 L 250,25" />
+                            <path d="M 240,10 L 240,2 L 247,5 L 240,8" fill="currentColor" />
+                            <!-- Tower Window details -->
+                            <rect x="236" y="32" width="8" height="12" rx="4" />
+                            <rect x="236" y="52" width="8" height="12" rx="4" />
+
+                            <!-- Left Wing Classroom Blocks -->
+                            <path d="M 200,50 L 100,50 L 100,95" />
+                            <path d="M 140,50 L 140,95" />
+                            <path d="M 170,50 L 170,95" />
+                            <path d="M 100,95 L 200,95" />
+
+                            <!-- Window grids on Left Wing -->
+                            <rect x="110" y="58" width="18" height="10" rx="1" />
+                            <rect x="110" y="75" width="18" height="10" rx="1" />
+                            <rect x="148" y="58" width="14" height="10" rx="1" />
+                            <rect x="148" y="75" width="14" height="10" rx="1" />
+                            <rect x="178" y="58" width="14" height="10" rx="1" />
+                            <rect x="178" y="75" width="14" height="10" rx="1" />
+
+                            <!-- Right Wing Block -->
+                            <path d="M 250,45 L 285,45 L 285,95" />
+                            <rect x="260" y="54" width="15" height="12" rx="1" />
+                            <rect x="260" y="74" width="15" height="12" rx="1" />
+
+                            <!-- Archway Entrance -->
+                            <path d="M 206,95 L 206,75 C 206,68 224,68 224,75 L 224,95" fill="none" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- COLUMN 2: BOOKING FORM (Span 5) -->
+                <div class="lg:col-span-8 p-8 lg:p-12 flex flex-col justify-center">
+                    <form action="#" method="POST" class="space-y-5">
+                        <h2 class="font-serif text-2xl lg:text-3xl font-bold text-brand-darkGreen mb-2">
+                            Book a Campus Tour
+                        </h2>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <!-- Parent Name Input -->
+                            <div class="space-y-1">
+                                <input type="text" required placeholder="Parent Name"
+                                    class="w-full px-4 py-3 text-xs bg-stone-50 border border-brand-darkCream/80 focus:border-brand-green rounded-lg outline-none transition-colors text-stone-800 placeholder-stone-400">
+                            </div>
+                            <!-- Email Address Input -->
+                            <div class="space-y-1">
+                                <input type="email" required placeholder="Email Address"
+                                    class="w-full px-4 py-3 text-xs bg-stone-50 border border-brand-darkCream/80 focus:border-brand-green rounded-lg outline-none transition-colors text-stone-800 placeholder-stone-400">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <!-- Phone Number Input -->
+                            <div class="space-y-1">
+                                <input type="tel" required placeholder="Phone Number"
+                                    class="w-full px-4 py-3 text-xs bg-stone-50 border border-brand-darkCream/80 focus:border-brand-green rounded-lg outline-none transition-colors text-stone-800 placeholder-stone-400">
+                            </div>
+                            <!-- Student Name Input -->
+                            <div class="space-y-1">
+                                <input type="text" required placeholder="Student Name"
+                                    class="w-full px-4 py-3 text-xs bg-stone-50 border border-brand-darkCream/80 focus:border-brand-green rounded-lg outline-none transition-colors text-stone-800 placeholder-stone-400">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <!-- Grade Level Selector -->
+                            <div class="space-y-1 relative">
+                                <select required
+                                    class="w-full px-4 py-3 text-xs bg-stone-50 border border-brand-darkCream/80 focus:border-brand-green rounded-lg outline-none transition-colors text-stone-600 appearance-none">
+                                    <option value="" disabled selected hidden>Grade Interested In</option>
+                                    <option value="early-years">Early Years (Pre-K - KG)</option>
+                                    <option value="primary">Primary School (Grades 1-5)</option>
+                                    <option value="middle">Middle School (Grades 6-8)</option>
+                                    <option value="high">High School (Grades 9-12)</option>
+                                </select>
+                                <div
+                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-stone-400">
+                                    <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                                </div>
+                            </div>
+                            <!-- Preferred Date Input -->
+                            <div class="space-y-1 relative">
+                                <input type="date" required
+                                    class="w-full px-4 py-3 text-xs bg-stone-50 border border-brand-darkCream/80 focus:border-brand-green rounded-lg outline-none transition-colors text-stone-500">
+                            </div>
+                        </div>
+
+                        <!-- Message Input -->
+                        <div class="space-y-1">
+                            <textarea rows="3" placeholder="Message (Optional)"
+                                class="w-full px-4 py-3 text-xs bg-stone-50 border border-brand-darkCream/80 focus:border-brand-green rounded-lg outline-none transition-colors text-stone-800 placeholder-stone-400 resize-none"></textarea>
+                        </div>
+
+                        <!-- Submit Action Button -->
+                        <div class="pt-2">
+                            <button type="submit"
+                                class="bg-brand-gold text-brand-darkGreen hover:bg-brand-green hover:text-white px-8 py-3.5 text-xs font-bold uppercase tracking-wider rounded-lg transition-all duration-300 flex items-center shadow-md shadow-brand-gold/15 group">
+                                <span>Submit Request</span>
+                                <i
+                                    class="fa-solid fa-arrow-right ml-2.5 transform group-hover:translate-x-1 transition-transform"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER TERMINAL ELEMENT -->
+    <footer
+        class="bg-brand-darkGreen text-white/90 py-10 border-t border-brand-green/30 text-center text-[11px] text-stone-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-2">
+            <p>&copy; 2026 East Bangalore International School. All physical building parameters are certified smart
+                ecosystems.</p>
+            <div class="space-x-4">
+                <a href="index.html" class="hover:text-brand-gold">Home Hub</a>
+                <a href="curriculum.html" class="hover:text-brand-gold">Curriculum Map</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE MENU SWITCH LOGIC -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+    </script>
+</body>
+
+</html>

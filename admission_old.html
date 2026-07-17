@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions | East Bangalore International School (EBIS)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            darkGreen: '#063B23',
+                            green: '#094F29',
+                            lightGreen: '#0D6E3B',
+                            cream: '#FAF7F0',
+                            darkCream: '#F1EAD9',
+                            gold: '#D4A316',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans text-stone-800 bg-brand-cream overflow-x-hidden">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-brand-darkGreen/95 backdrop-blur-md text-white border-b border-brand-green/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo area -->
+            <a href="#" class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-brand-gold rounded-full flex items-center justify-center font-serif font-bold text-brand-darkGreen text-xl">E</div>
+                <div>
+                    <span class="block font-serif font-bold text-lg leading-tight tracking-wide">EBIS</span>
+                    <span class="block text-xs text-brand-cream/80 tracking-widest uppercase">East Bangalore</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                <a href="#process" class="hover:text-brand-gold transition-colors">Admission Process</a>
+                <a href="#philosophy" class="hover:text-brand-gold transition-colors">Philosophy</a>
+                <a href="#dates" class="hover:text-brand-gold transition-colors">Dates & Deadlines</a>
+                <a href="#tuition" class="hover:text-brand-gold transition-colors">Tuition & FAQs</a>
+                <a href="#testimonials" class="hover:text-brand-gold transition-colors">Testimonials</a>
+            </nav>
+
+            <div class="hidden lg:flex items-center space-x-4">
+                <button onclick="openModal()" class="border border-brand-cream hover:bg-brand-cream hover:text-brand-darkGreen px-4 py-2 text-sm font-medium transition-all duration-300">Request Info</button>
+                <a href="#apply" class="bg-brand-gold text-brand-darkGreen hover:bg-white hover:text-brand-green px-5 py-2 text-sm font-bold transition-all duration-300 shadow-md">Apply Now</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="lg:hidden text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-brand-darkGreen border-t border-brand-green/35 px-4 py-6 space-y-4 shadow-xl">
+            <a href="#process" class="block text-brand-cream hover:text-brand-gold text-base py-1">Admission Process</a>
+            <a href="#philosophy" class="block text-brand-cream hover:text-brand-gold text-base py-1">Philosophy</a>
+            <a href="#dates" class="block text-brand-cream hover:text-brand-gold text-base py-1">Dates & Deadlines</a>
+            <a href="#tuition" class="block text-brand-cream hover:text-brand-gold text-base py-1">Tuition & FAQs</a>
+            <a href="#testimonials" class="block text-brand-cream hover:text-brand-gold text-base py-1">Testimonials</a>
+            <div class="pt-4 border-t border-brand-green flex flex-col space-y-3">
+                <button onclick="openModal()" class="w-full text-center border border-brand-cream text-white py-2 font-medium">Request Info</button>
+                <a href="#apply" class="w-full text-center bg-brand-gold text-brand-darkGreen py-2 font-bold">Apply Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-brand-darkGreen text-white py-20 lg:py-32 overflow-hidden">
+        <!-- Elegant background graphics / overlays -->
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-brand-lightGreen via-brand-darkGreen to-brand-darkGreen"></div>
+        <div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full border border-brand-gold/10 pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Hero content -->
+            <div class="lg:col-span-7 space-y-6">
+                <span class="inline-block bg-brand-gold/20 text-brand-gold font-bold text-xs tracking-widest uppercase px-3 py-1 border border-brand-gold/30">
+                    Admissions for 2027-28 Now Open
+                </span>
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+                    Start your journey to <br>
+                    <span class="italic text-brand-gold font-normal">world-ready</span> leadership.
+                </h1>
+                <p class="text-base sm:text-lg text-brand-cream/80 max-w-xl font-light">
+                    Experience an immersive international education at our state-of-the-art Bengaluru campus, where students are prepared to innovate, lead, and excel.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
+                    <a href="#apply" class="text-center bg-brand-gold hover:bg-white text-brand-darkGreen font-bold px-8 py-4 transition-all duration-300 shadow-lg">
+                        Start Online Application
+                    </a>
+                    <button onclick="openModal()" class="text-center border border-white hover:bg-white/10 text-white font-medium px-8 py-4 transition-all duration-300">
+                        Request Prospectus
+                    </button>
+                </div>
+            </div>
+
+            <!-- Hero Images Block -->
+            <div class="lg:col-span-5 relative">
+                <!-- Stacked Image Card Mockup resembling standard image visual -->
+                <div class="relative z-10 rounded-lg overflow-hidden border-4 border-brand-cream/10 shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&q=80&w=800" alt="Students in EBIS Campus" class="w-full h-[400px] object-cover filter brightness-95">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-darkGreen via-transparent to-transparent opacity-80"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <p class="font-serif italic text-lg text-brand-gold">"We are not just a school, we are a global community."</p>
+                        <p class="text-xs tracking-wider text-brand-cream/70 uppercase mt-2">EBIS Student Leadership Council</p>
+                    </div>
+                </div>
+                <!-- Small decorative elements -->
+                <div class="absolute -top-6 -left-6 w-24 h-24 bg-brand-gold/10 -z-0 rounded-full"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADMISSION PROCESS (Timeline Section) -->
+    <section id="process" class="py-20 bg-brand-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-brand-gold text-xs font-bold tracking-widest uppercase block">Step-By-Step Guide</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-darkGreen">Our Admissions Process</h2>
+                <div class="w-16 h-1 bg-brand-gold mx-auto"></div>
+                <p class="text-stone-600 text-sm sm:text-base">We designed a straightforward five-step onboarding workflow to welcome your child into our dynamic community seamlessly.</p>
+            </div>
+
+            <!-- Timeline Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8 relative">
+                <!-- Connect Line for desktop -->
+                <div class="hidden md:block absolute top-12 left-[10%] right-[10%] h-0.5 bg-brand-darkCream -z-0"></div>
+
+                <!-- Step 1 -->
+                <div class="relative bg-white p-6 rounded-lg shadow-md border border-brand-darkCream/40 flex flex-col items-center text-center z-10 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-12 h-12 rounded-full bg-brand-green text-white flex items-center justify-center font-bold text-lg mb-4 ring-4 ring-brand-cream">1</div>
+                    <h3 class="font-serif font-bold text-brand-darkGreen text-lg mb-2">Registration</h3>
+                    <p class="text-xs text-stone-500">Fill and submit the online application form.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative bg-white p-6 rounded-lg shadow-md border border-brand-darkCream/40 flex flex-col items-center text-center z-10 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-12 h-12 rounded-full bg-brand-green text-white flex items-center justify-center font-bold text-lg mb-4 ring-4 ring-brand-cream">2</div>
+                    <h3 class="font-serif font-bold text-brand-darkGreen text-lg mb-2">Documentation</h3>
+                    <p class="text-xs text-stone-500">Upload reports, transcripts, and passport photos.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative bg-white p-6 rounded-lg shadow-md border border-brand-darkCream/40 flex flex-col items-center text-center z-10 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-12 h-12 rounded-full bg-brand-green text-white flex items-center justify-center font-bold text-lg mb-4 ring-4 ring-brand-cream">3</div>
+                    <h3 class="font-serif font-bold text-brand-darkGreen text-lg mb-2">Assessment</h3>
+                    <p class="text-xs text-stone-500">Academic and language evaluations tailored to grade.</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="relative bg-white p-6 rounded-lg shadow-md border border-brand-darkCream/40 flex flex-col items-center text-center z-10 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-12 h-12 rounded-full bg-brand-green text-white flex items-center justify-center font-bold text-lg mb-4 ring-4 ring-brand-cream">4</div>
+                    <h3 class="font-serif font-bold text-brand-darkGreen text-lg mb-2">Interview</h3>
+                    <p class="text-xs text-stone-500">Personal interaction with our Admissions Panel.</p>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="relative bg-white p-6 rounded-lg shadow-md border border-brand-darkCream/40 flex flex-col items-center text-center z-10 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-12 h-12 rounded-full bg-brand-gold text-brand-darkGreen flex items-center justify-center font-bold text-lg mb-4 ring-4 ring-brand-cream">5</div>
+                    <h3 class="font-serif font-bold text-brand-darkGreen text-lg mb-2">Decision</h3>
+                    <p class="text-xs text-stone-500">Offer letter issue, fee submission & enrollment complete.</p>
+                </div>
+            </div>
+
+            <div class="mt-12 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8 text-sm text-stone-600 bg-brand-darkCream/40 p-4 rounded-lg">
+                <span><i class="fa-solid fa-map-marked-alt text-brand-green mr-2"></i><strong>Guided Tours:</strong> Available daily Mon-Sat.</span>
+                <span class="hidden sm:inline-block text-stone-300">|</span>
+                <span><i class="fa-solid fa-user-tie text-brand-green mr-2"></i><strong>Need assistance?</strong> Connect with a Counselor.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADMISSION PHILOSOPHY (Dark Green Highlight Grid) -->
+    <section id="philosophy" class="py-20 bg-brand-green text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-4 space-y-6">
+                    <span class="text-brand-gold text-xs font-bold tracking-widest uppercase block">Why Choose EBIS?</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold leading-tight">Our Admission Philosophy</h2>
+                    <p class="text-brand-cream/80 text-sm leading-relaxed">
+                        We seek curious, creative, and motivated students from diverse cultural backgrounds who are ready to build a bright future inside and outside the classroom.
+                    </p>
+                    <a href="#apply" class="inline-block bg-brand-gold text-brand-darkGreen hover:bg-white hover:text-brand-green font-bold px-6 py-3 text-sm transition-all duration-300">Explore Curriculum</a>
+                </div>
+
+                <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Philosophy Card 1 -->
+                    <div class="p-6 bg-brand-darkGreen border border-brand-cream/10 rounded hover:border-brand-gold/40 transition-colors">
+                        <i class="fa-solid fa-users-viewfinder text-brand-gold text-2xl mb-4"></i>
+                        <h3 class="font-serif font-bold text-lg text-white mb-2">Diverse Student Body</h3>
+                        <p class="text-stone-300 text-xs leading-relaxed">We bring students from over 30 countries together to foster collaborative global understandings.</p>
+                    </div>
+                    <!-- Philosophy Card 2 -->
+                    <div class="p-6 bg-brand-darkGreen border border-brand-cream/10 rounded hover:border-brand-gold/40 transition-colors">
+                        <i class="fa-solid fa-brain text-brand-gold text-2xl mb-4"></i>
+                        <h3 class="font-serif font-bold text-lg text-white mb-2">Aptitude for Learning</h3>
+                        <p class="text-stone-300 text-xs leading-relaxed">Our evaluation seeks potential, conceptual curiosity, and a growth mindset in students.</p>
+                    </div>
+                    <!-- Philosophy Card 3 -->
+                    <div class="p-6 bg-brand-darkGreen border border-brand-cream/10 rounded hover:border-brand-gold/40 transition-colors">
+                        <i class="fa-solid fa-globe text-brand-gold text-2xl mb-4"></i>
+                        <h3 class="font-serif font-bold text-lg text-white mb-2">Global Outlook</h3>
+                        <p class="text-stone-300 text-xs leading-relaxed">Our learners maintain a strong connection with Indian heritage while analyzing global scales.</p>
+                    </div>
+                    <!-- Philosophy Card 4 -->
+                    <div class="p-6 bg-brand-darkGreen border border-brand-cream/10 rounded hover:border-brand-gold/40 transition-colors">
+                        <i class="fa-solid fa-handshake text-brand-gold text-2xl mb-4"></i>
+                        <h3 class="font-serif font-bold text-lg text-white mb-2">Community Integrity</h3>
+                        <p class="text-stone-300 text-xs leading-relaxed">We emphasize shared ethical guidelines to build respectful, responsible global citizens.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- DATES, CALENDAR, & STATISTICS -->
+    <section id="dates" class="py-20 bg-brand-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Timeline Info & Deadlines -->
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-brand-gold text-xs font-bold tracking-widest uppercase block">Timelines & Milestones</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-darkGreen">Important Dates & Deadlines</h2>
+                    <p class="text-stone-600 text-sm">Review our scheduled academic deadlines for the 2027-28 session below. Make sure to apply on time to guarantee seat availability.</p>
+                    
+                    <div class="space-y-4">
+                        <!-- Date Item 1 -->
+                        <div class="flex items-start space-x-4 p-4 bg-white rounded-lg border border-brand-darkCream/40 shadow-sm">
+                            <div class="bg-brand-green/10 text-brand-green rounded p-3 text-center min-w-[70px]">
+                                <span class="block font-bold text-lg">15</span>
+                                <span class="block text-[10px] uppercase font-semibold">Sept 2026</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-darkGreen">Early Application Deadline</h4>
+                                <p class="text-xs text-stone-500 mt-1">Submit application package by mid-September to waive assessment fees and receive priority placement results.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Date Item 2 -->
+                        <div class="flex items-start space-x-4 p-4 bg-white rounded-lg border border-brand-darkCream/40 shadow-sm">
+                            <div class="bg-brand-gold/15 text-brand-gold rounded p-3 text-center min-w-[70px]">
+                                <span class="block font-bold text-lg">30</span>
+                                <span class="block text-[10px] uppercase font-semibold">Nov 2026</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-darkGreen">General Admission Deadline</h4>
+                                <p class="text-xs text-stone-500 mt-1">Submission of final grades, reference letters, and application files for general round consideration.</p>
+                            </div>
+                        </div>
+
+                        <!-- Date Item 3 -->
+                        <div class="flex items-start space-x-4 p-4 bg-white rounded-lg border border-brand-darkCream/40 shadow-sm">
+                            <div class="bg-brand-green/10 text-brand-green rounded p-3 text-center min-w-[70px]">
+                                <span class="block font-bold text-lg">15</span>
+                                <span class="block text-[10px] uppercase font-semibold">Jan 2027</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-darkGreen">Assessment Cycle Rounds</h4>
+                                <p class="text-xs text-stone-500 mt-1">Entrance evaluations and interactive sessions commence across specified global centers and online.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features & Key Metrics Panel -->
+                <div class="lg:col-span-5 bg-brand-green text-white p-8 rounded-2xl shadow-xl flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute right-0 top-0 w-32 h-32 bg-brand-lightGreen/20 rounded-bl-full"></div>
+                    <div class="space-y-6">
+                        <h3 class="font-serif font-bold text-xl text-brand-gold">EBIS At A Glance</h3>
+                        <p class="text-stone-300 text-xs">A vibrant international ecosystem empowering students through state-of-the-art facilities and elite accreditations.</p>
+                        
+                        <div class="grid grid-cols-2 gap-4 pt-4">
+                            <div class="border-l-2 border-brand-gold pl-4 py-1">
+                                <span class="block font-serif text-2xl font-bold">100%</span>
+                                <span class="block text-[10px] uppercase text-stone-300 tracking-wider">University Placement</span>
+                            </div>
+                            <div class="border-l-2 border-brand-gold pl-4 py-1">
+                                <span class="block font-serif text-2xl font-bold">8:1</span>
+                                <span class="block text-[10px] uppercase text-stone-300 tracking-wider">Student-Teacher Ratio</span>
+                            </div>
+                            <div class="border-l-2 border-brand-gold pl-4 py-1">
+                                <span class="block font-serif text-2xl font-bold">35+</span>
+                                <span class="block text-[10px] uppercase text-stone-300 tracking-wider">Nationalities</span>
+                            </div>
+                            <div class="border-l-2 border-brand-gold pl-4 py-1">
+                                <span class="block font-serif text-2xl font-bold">85+</span>
+                                <span class="block text-[10px] uppercase text-stone-300 tracking-wider">Co-curricular Options</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-brand-cream/10 flex items-center space-x-3">
+                        <i class="fa-solid fa-graduation-cap text-brand-gold text-3xl"></i>
+                        <p class="text-xs text-brand-cream/80">Authorized IB World School offering IBDP, IGCSE & CBSE syllabi.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CAMPUS INTERACTIVE GALLERY -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
+                <div class="max-w-xl space-y-2">
+                    <span class="text-brand-gold text-xs font-bold tracking-widest uppercase block">Our Campus Culture</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-darkGreen">Explore Our Modern Spaces</h2>
+                    <p class="text-stone-600 text-sm">Take a glimpse of our cutting-edge campus environments where innovation meets standard academic excellence daily.</p>
+                </div>
+                <button onclick="openModal()" class="mt-4 md:mt-0 bg-brand-green hover:bg-brand-darkGreen text-white px-6 py-3 font-semibold text-sm transition-all duration-300">
+                    Book a Campus Tour
+                </button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery 1 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-md cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=600" alt="Science Labs" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-darkGreen/90 via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-4 left-4 right-4">
+                        <h4 class="font-serif font-bold text-white text-lg">State-of-the-Art Science Labs</h4>
+                        <p class="text-xs text-brand-cream/70 mt-1">Equipped with analytical instruments for interactive advanced chemistry & physics courses.</p>
+                    </div>
+                </div>
+                <!-- Gallery 2 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-md cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=600" alt="Art Studio" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-darkGreen/90 via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-4 left-4 right-4">
+                        <h4 class="font-serif font-bold text-white text-lg">Dynamic Art Studios</h4>
+                        <p class="text-xs text-brand-cream/70 mt-1">Creative environments designed to encourage visual design, pottery, and painting skills.</p>
+                    </div>
+                </div>
+                <!-- Gallery 3 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-md cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&q=80&w=600" alt="Complex" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-darkGreen/90 via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-4 left-4 right-4">
+                        <h4 class="font-serif font-bold text-white text-lg">Multipurpose Sports Complexes</h4>
+                        <p class="text-xs text-brand-cream/70 mt-1">Home to Olympic-style pools, athletic tracks, and indoor basketball courts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TUITION & SCHOLARSHIP INFORMATION (Tabs Layout) -->
+    <section id="tuition" class="py-20 bg-brand-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+                <span class="text-brand-gold text-xs font-bold tracking-widest uppercase block">Investment in Excellence</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-darkGreen">Tuition & Financial Support</h2>
+                <div class="w-16 h-1 bg-brand-gold mx-auto"></div>
+                <p class="text-stone-600 text-sm">We provide an unparalleled value model for families, incorporating diverse payment structures and merit-based scholarship packages.</p>
+            </div>
+
+            <!-- Tab Buttons -->
+            <div class="flex justify-center space-x-4 mb-8">
+                <button onclick="switchTab('feeStructure')" id="tab-feeStructure" class="px-6 py-2 border-b-2 border-brand-green text-brand-green font-bold text-sm tracking-wide focus:outline-none transition-all">
+                    Fee Structure Breakdown
+                </button>
+                <button onclick="switchTab('scholarship')" id="tab-scholarship" class="px-6 py-2 border-b-2 border-transparent text-stone-500 font-medium text-sm tracking-wide hover:text-brand-green focus:outline-none transition-all">
+                    Scholarship Programs
+                </button>
+            </div>
+
+            <!-- Tab Content 1: Fee Structure -->
+            <div id="content-feeStructure" class="tab-content block">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Fee Card Primary -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm border border-brand-darkCream/40 flex flex-col justify-between">
+                        <div>
+                            <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Early Years</span>
+                            <h4 class="font-serif font-bold text-2xl text-brand-darkGreen mt-2">Primary School</h4>
+                            <p class="text-stone-500 text-xs mt-2">Grade 1 to Grade 5 focusing on active inquiry-centered fundamentals.</p>
+                        </div>
+                        <div class="my-6">
+                            <span class="text-stone-400 text-sm">Approx. Annual Fee</span>
+                            <p class="font-serif font-bold text-3xl text-brand-darkGreen mt-1">&#8377; 2,80,000 <span class="text-xs text-stone-400 font-sans font-normal">/ year</span></p>
+                        </div>
+                        <ul class="space-y-2 text-stone-600 text-xs mb-8">
+                            <li><i class="fa-solid fa-check text-brand-green mr-2"></i>Includes Standard Tuition</li>
+                            <li><i class="fa-solid fa-check text-brand-green mr-2"></i>Co-curricular Activities & Sports</li>
+                            <li><i class="fa-solid fa-check text-brand-green mr-2"></i>Lab & Library Access</li>
+                        </ul>
+                        <button onclick="openModal()" class="w-full py-3 text-center bg-brand-darkCream/40 hover:bg-brand-green hover:text-white text-brand-darkGreen font-bold transition-all text-sm rounded">Request Full Breakdown</button>
+                    </div>
+
+                    <!-- Fee Card Middle -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm border border-brand-darkCream/40 flex flex-col justify-between relative ring-2 ring-brand-green">
+                        <div class="absolute -top-3 right-6 bg-brand-green text-white text-[10px] tracking-wider uppercase font-bold py-1 px-3 rounded-full">Popular Choice</div>
+                        <div>
+                            <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Middle Years</span>
+                            <h4 class="font-serif font-bold text-2xl text-brand-darkGreen mt-2">Middle School</h4>
+                            <p class="text-stone-500 text-xs mt-2">Grade 6 to Grade 10 offering standardized IGCSE and CBSE routes.</p>
+                        </div>
+                        <div class="my-6">
+                            <span class="text-stone-400 text-sm">Approx. Annual Fee</span>
+                            <p class="font-serif font-bold text-3xl text-brand-darkGreen mt-1">&#8377; 3,90,000 <span class="text-xs text-stone-400 font-sans font-normal">/ year</span></p>
+                        </div>
+                        <ul class="space-y-2 text-stone-600 text-xs mb-8">
+                            <li><i class="fa-solid fa-check text-brand-green mr-2"></i>Includes Cambridge Pathway Fees</li>
+                            <li><i class="fa-solid fa-check text-brand-green mr-2"></i>Extended Science & IT Labs Access</li>
+                            <li><i class="fa-solid fa-check text-brand-green mr-2"></i>Standard Field Trips & Outdoor Camps</li>
+                        </ul>
+                        <button onclick="openModal()" class="w-full py-3 text-center bg-brand-green hover:bg-brand-darkGreen text-white font-bold transition-all text-sm rounded">Request Full Breakdown</button>
+                    </div>
+
+                    <!-- Fee Card Advanced -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm border border-brand-darkCream/40 flex flex-col justify-between">
+                        <div>
+                            <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Advanced Diploma</span>
+                            <h4 class="font-serif font-bold text-2xl text-brand-darkGreen mt-2">Senior Secondary</h4>
+                            <p class="text-stone-500 text-xs mt-2">Grade 11 to 12 presenting the elite IB Diploma or CBSE pathways.</p>
+                        </div>
+                        <div class="my-6">
+                            <span class="text-stone-400 text-sm">Approx. Annual Fee</span>
+                            <p class="font-serif font-bold text-3xl text-brand-darkGreen mt-1">&#8377; 4,85,000 <span class="text-xs text-stone-400 font-sans font-normal">/ year</span></p>
+                        </div>
+                        <ul class="space-y-2 text-stone-600 text-xs mb-8">
+                            <li><i class="fa-solid fa-check text-brand-green mr-2"></i>Full Access to Career & Uni Counseling</li>
+                            <li><i class="fa-solid fa-check text-brand-green mr-2"></i>Advanced Laboratory Electives</li>
+                            <li><i class="fa-solid fa-check text-brand-green mr-2"></i>IB Core / CBSE Examination Prep</li>
+                        </ul>
+                        <button onclick="openModal()" class="w-full py-3 text-center bg-brand-darkCream/40 hover:bg-brand-green hover:text-white text-brand-darkGreen font-bold transition-all text-sm rounded">Request Full Breakdown</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content 2: Scholarships -->
+            <div id="content-scholarship" class="tab-content hidden">
+                <div class="bg-white p-8 rounded-lg border border-brand-darkCream/40 shadow-sm max-w-4xl mx-auto space-y-6">
+                    <h3 class="font-serif font-bold text-xl text-brand-darkGreen">Nurturing Outstanding Potential</h3>
+                    <p class="text-sm text-stone-600 leading-relaxed">
+                        East Bangalore International School (EBIS) recognizes exceptional achievements across academic scores, athletic arenas, and cultural innovations. We offer up to <strong>50% tuition waivers</strong> for elite scholars joining Grade 9 through 11.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+                        <div class="space-y-2">
+                            <h4 class="font-bold text-brand-green"><i class="fa-solid fa-medal mr-2"></i>Academic Merit Award</h4>
+                            <p class="text-xs text-stone-500">A merit category structured for board toppers and outstanding previous scores.</p>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="font-bold text-brand-green"><i class="fa-solid fa-trophy mr-2"></i>Elite Athlete Scholarship</h4>
+                            <p class="text-xs text-stone-500">Available to students with recognized participation across state & national championships.</p>
+                        </div>
+                    </div>
+                    <div class="pt-6 border-t border-brand-darkCream/40 flex flex-col sm:flex-row justify-between items-center">
+                        <span class="text-xs text-stone-500 mb-4 sm:mb-0">Scholarship application requires independent assessment and portfolio validation.</span>
+                        <a href="#" class="bg-brand-gold text-brand-darkGreen font-bold px-6 py-3 text-sm transition-all hover:bg-brand-green hover:text-white">Apply for Scholarship</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS (Interactive Accordion) -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 space-y-3">
+                <span class="text-brand-gold text-xs font-bold tracking-widest uppercase block">Clarify Your Doubts</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-darkGreen">Frequently Asked Questions</h2>
+                <div class="w-16 h-1 bg-brand-gold mx-auto"></div>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Accordion Item 1 -->
+                <div class="border border-brand-darkCream/40 rounded-lg overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-5 bg-brand-cream/35 text-left font-bold text-brand-darkGreen hover:bg-brand-cream/60 transition-colors" onclick="toggleAccordion(1)">
+                        <span>What is the assessment format for Grade 6 admissions?</span>
+                        <i id="icon-1" class="fa-solid fa-chevron-down text-brand-green transition-transform"></i>
+                    </button>
+                    <div id="faq-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white">
+                        <div class="p-5 text-sm text-stone-600 leading-relaxed border-t border-brand-darkCream/20">
+                            The evaluation focuses on analytical logic, English vocabulary/composition capabilities, and conceptual quantitative understanding relevant to Level 5 curriculum. There are no competitive pressures; we construct adaptive profiling metrics.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 2 -->
+                <div class="border border-brand-darkCream/40 rounded-lg overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-5 bg-brand-cream/35 text-left font-bold text-brand-darkGreen hover:bg-brand-cream/60 transition-colors" onclick="toggleAccordion(2)">
+                        <span>Do you accept mid-term transfer students?</span>
+                        <i id="icon-2" class="fa-solid fa-chevron-down text-brand-green transition-transform"></i>
+                    </button>
+                    <div id="faq-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white">
+                        <div class="p-5 text-sm text-stone-600 leading-relaxed border-t border-brand-darkCream/20">
+                            Yes. Based on physical seat availabilities and previous academic records matching, we accept transfer students up to the start of the final term of study.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 3 -->
+                <div class="border border-brand-darkCream/40 rounded-lg overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-5 bg-brand-cream/35 text-left font-bold text-brand-darkGreen hover:bg-brand-cream/60 transition-colors" onclick="toggleAccordion(3)">
+                        <span>Are there age criteria thresholds for kindergarten grades?</span>
+                        <i id="icon-3" class="fa-solid fa-chevron-down text-brand-green transition-transform"></i>
+                    </button>
+                    <div id="faq-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white">
+                        <div class="p-5 text-sm text-stone-600 leading-relaxed border-t border-brand-darkCream/20">
+                            Yes, students entering Montessori or nursery structures must complete 3 years of age as of June 1st of the academic year of admission.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-20 bg-brand-cream border-t border-brand-darkCream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 space-y-3">
+                <span class="text-brand-gold text-xs font-bold tracking-widest uppercase block">Parent Endorsements</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-darkGreen">What Our Families Say</h2>
+                <div class="w-16 h-1 bg-brand-gold mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-brand-darkCream/40 relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-brand-gold space-x-1 mb-4">
+                            <i class="fa-solid fa-star text-xs"></i>
+                            <i class="fa-solid fa-star text-xs"></i>
+                            <i class="fa-solid fa-star text-xs"></i>
+                            <i class="fa-solid fa-star text-xs"></i>
+                            <i class="fa-solid fa-star text-xs"></i>
+                        </div>
+                        <p class="text-stone-600 text-xs italic leading-relaxed">
+                            "The admissions team was incredibly helpful throughout the process of transferring our daughter from London. Moving into EBIS Bangalore has been a defining step in her academic and extracurricular confidence."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 mt-6 pt-6 border-t border-brand-darkCream/20">
+                        <div class="w-10 h-10 rounded-full bg-stone-300 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150" alt="Parent" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <span class="block text-xs font-bold text-brand-darkGreen">Mrs. Sarah Jenkins</span>
+                            <span class="block text-[10px] text-stone-500">Parent of Grade 8 Student</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-brand-darkCream/40 relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-brand-gold space-x-1 mb-4">
+                            <i class="fa-solid fa-star text-xs"></i>
+                            <i class="fa-solid fa-star text-xs"></i>
+                            <i class="fa-solid fa-star text-xs"></i>
+                            <i class="fa-solid fa-star text-xs"></i>
+                            <i class="fa-solid fa-star text-xs"></i>
+                        </div>
+                        <p class="text-stone-600 text-xs italic leading-relaxed">
+                            "Finding a school that seamlessly balances IB excellence with classical sports coaching was incredibly vital. EBIS's holistic approach represents exactly what is needed to foster successful future-ready citizens."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 mt-6 pt-6 border-t border-brand-darkCream/20">
+                        <div class="w-10 h-10 rounded-full bg-stone-300 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150" alt="Parent" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <span class="block text-xs font-bold text-brand-darkGreen">Dr. Anirudh Mehta</span>
+                            <span class="block text-[10px] text-stone-500">Parent of Grade 11 Student</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-brand-darkCream/40 relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-brand-gold space-x-1 mb-4">
+                            <i class="fa-solid fa-star text-xs"></i>
+                            <i class="fa-solid fa-star text-xs"></i>
+                            <i class="fa-solid fa-star text-xs"></i>
+                            <i class="fa-solid fa-star text-xs"></i>
+                            <i class="fa-solid fa-star text-xs"></i>
+                        </div>
+                        <p class="text-stone-600 text-xs italic leading-relaxed">
+                            "The community integrity here is outstanding. EBIS teaches learners to collaborate globally, and our son has thrived since joining their senior secondary science track."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 mt-6 pt-6 border-t border-brand-darkCream/20">
+                        <div class="w-10 h-10 rounded-full bg-stone-300 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150" alt="Parent" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <span class="block text-xs font-bold text-brand-darkGreen">Mrs. Deepa Kulkarni</span>
+                            <span class="block text-[10px] text-stone-500">Parent of Grade 10 Student</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INQUIRY / APPLY FORM SECTION -->
+    <section id="apply" class="py-20 bg-brand-darkGreen text-white relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 space-y-3">
+                <span class="text-brand-gold text-xs font-bold tracking-widest uppercase block">Begin Today</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold">Start Your Admission Application</h2>
+                <div class="w-16 h-1 bg-brand-gold mx-auto"></div>
+                <p class="text-brand-cream/80 text-sm max-w-lg mx-auto">Fill out our digital enrollment query to book your entrance verification and connect with an expert advisor.</p>
+            </div>
+
+            <!-- Simple & Clean Application Form -->
+            <form action="#" class="bg-white p-8 rounded-xl shadow-2xl text-stone-800 space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold text-brand-darkGreen uppercase mb-2">Student's Full Name *</label>
+                        <input type="text" placeholder="Enter full name" required class="w-full px-4 py-3 border border-brand-darkCream bg-brand-cream/10 focus:outline-none focus:border-brand-green text-sm rounded">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-brand-darkGreen uppercase mb-2">Target Grade Level *</label>
+                        <select required class="w-full px-4 py-3 border border-brand-darkCream bg-brand-cream/10 focus:outline-none focus:border-brand-green text-sm rounded">
+                            <option value="">Select Target Grade</option>
+                            <option value="kindergarten">Montessori / Kindergarten</option>
+                            <option value="primary">Primary (Grade 1-5)</option>
+                            <option value="middle">Middle (Grade 6-10)</option>
+                            <option value="high">Senior Secondary (Grade 11-12)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold text-brand-darkGreen uppercase mb-2">Parent/Guardian Name *</label>
+                        <input type="text" placeholder="Enter parent name" required class="w-full px-4 py-3 border border-brand-darkCream bg-brand-cream/10 focus:outline-none focus:border-brand-green text-sm rounded">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-brand-darkGreen uppercase mb-2">Primary Contact Number *</label>
+                        <input type="tel" placeholder="Enter contact number" required class="w-full px-4 py-3 border border-brand-darkCream bg-brand-cream/10 focus:outline-none focus:border-brand-green text-sm rounded">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-brand-darkGreen uppercase mb-2">Email Address *</label>
+                    <input type="email" placeholder="example@domain.com" required class="w-full px-4 py-3 border border-brand-darkCream bg-brand-cream/10 focus:outline-none focus:border-brand-green text-sm rounded">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-brand-darkGreen uppercase mb-2">Additional Information / Queries</label>
+                    <textarea rows="4" placeholder="Mention any past school background or specific student requirements..." class="w-full px-4 py-3 border border-brand-darkCream bg-brand-cream/10 focus:outline-none focus:border-brand-green text-sm rounded"></textarea>
+                </div>
+
+                <div class="flex items-center space-x-2">
+                    <input type="checkbox" id="consent" required class="accent-brand-green">
+                    <label for="consent" class="text-xs text-stone-500">I agree to receive communications regarding admissions and school schedules from EBIS.</label>
+                </div>
+
+                <button type="submit" class="w-full py-4 bg-brand-gold hover:bg-brand-green hover:text-white text-brand-darkGreen font-bold transition-all duration-300 text-sm tracking-wide rounded">
+                    Submit Application Inquiry
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-darkGreen text-white/90 border-t border-brand-green/30 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <!-- Col 1 -->
+            <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-brand-gold rounded-full flex items-center justify-center font-serif font-bold text-brand-darkGreen text-base">E</div>
+                    <span class="font-serif font-bold text-lg tracking-wide">EBIS</span>
+                </div>
+                <p class="text-stone-400 text-xs leading-relaxed">
+                    Accredited international standard campus offering holistic development pathways to modern global leaders.
+                </p>
+                <div class="flex space-x-4 pt-2">
+                    <a href="#" class="text-brand-gold hover:text-white transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="text-brand-gold hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-brand-gold hover:text-white transition-colors"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="text-brand-gold hover:text-white transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <!-- Col 2 -->
+            <div class="space-y-4">
+                <h4 class="font-bold text-sm tracking-wider uppercase text-brand-gold">Admissions</h4>
+                <ul class="space-y-2 text-xs text-stone-400">
+                    <li><a href="#process" class="hover:text-brand-gold transition-colors">How to Apply</a></li>
+                    <li><a href="#tuition" class="hover:text-brand-gold transition-colors">Fee Structures</a></li>
+                    <li><a href="#dates" class="hover:text-brand-gold transition-colors">Important Dates</a></li>
+                    <li><a href="#tuition" class="hover:text-brand-gold transition-colors">Scholarship Terms</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3 -->
+            <div class="space-y-4">
+                <h4 class="font-bold text-sm tracking-wider uppercase text-brand-gold">Contact Us</h4>
+                <p class="text-xs text-stone-400">
+                    <i class="fa-solid fa-location-dot mr-2 text-brand-gold"></i> East Bangalore, IT Corridor, Bengaluru, KA - 560087
+                </p>
+                <p class="text-xs text-stone-400">
+                    <i class="fa-solid fa-phone mr-2 text-brand-gold"></i> +91 80 4991 2200
+                </p>
+                <p class="text-xs text-stone-400">
+                    <i class="fa-solid fa-envelope mr-2 text-brand-gold"></i> admissions@ebis.edu.in
+                </p>
+            </div>
+
+            <!-- Col 4 -->
+            <div class="space-y-4">
+                <h4 class="font-bold text-sm tracking-wider uppercase text-brand-gold">Accreditation</h4>
+                <p class="text-xs text-stone-400 leading-relaxed">
+                    EBIS is authorized by the International Baccalaureate Organization (IBO) and Cambridge Assessment International Education (CAIE).
+                </p>
+                <div class="flex space-x-2">
+                    <span class="inline-block bg-brand-green px-2 py-1 text-[9px] font-bold text-brand-gold uppercase rounded">IB DP</span>
+                    <span class="inline-block bg-brand-green px-2 py-1 text-[9px] font-bold text-brand-gold uppercase rounded">CAIE</span>
+                    <span class="inline-block bg-brand-green px-2 py-1 text-[9px] font-bold text-brand-gold uppercase rounded">CBSE</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-brand-green/30 flex flex-col sm:flex-row justify-between items-center text-xs text-stone-400">
+            <p>&copy; 2026 East Bangalore International School. All rights reserved.</p>
+            <div class="flex space-x-4 mt-4 sm:mt-0">
+                <a href="#" class="hover:text-brand-gold transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-brand-gold transition-colors">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- POPUP MODAL FOR BROCHURE REQUEST / CONTACT -->
+    <div id="infoModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 hidden transition-opacity duration-300">
+        <div class="relative bg-white text-stone-800 rounded-xl shadow-2xl max-w-md w-full p-8 space-y-6 animate-fade-in">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-stone-400 hover:text-stone-700">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <div class="text-center space-y-2">
+                <i class="fa-regular fa-envelope-open text-brand-gold text-4xl"></i>
+                <h3 class="font-serif font-bold text-2xl text-brand-darkGreen">Request Information</h3>
+                <p class="text-xs text-stone-500">Provide your contact info, and our admissions coordinators will email you the official 2027-28 prospectus within 24 hours.</p>
+            </div>
+            <form action="#" class="space-y-4">
+                <div>
+                    <label class="block text-[10px] font-bold text-brand-darkGreen uppercase mb-1">Parent's Name</label>
+                    <input type="text" required placeholder="Enter your full name" class="w-full px-4 py-2 border border-brand-darkCream text-sm rounded focus:outline-none focus:border-brand-green">
+                </div>
+                <div>
+                    <label class="block text-[10px] font-bold text-brand-darkGreen uppercase mb-1">Email Address</label>
+                    <input type="email" required placeholder="name@domain.com" class="w-full px-4 py-2 border border-brand-darkCream text-sm rounded focus:outline-none focus:border-brand-green">
+                </div>
+                <button type="submit" class="w-full py-3 bg-brand-gold hover:bg-brand-green hover:text-white text-brand-darkGreen font-bold transition-colors text-sm rounded">
+                    Send Me Prospectus
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT FOR INTERACTIVE LOGIC -->
+    <script>
+        // Toggle mobile navigation menu
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Toggle Accordion Panels
+        function toggleAccordion(id) {
+            const faqPanel = document.getElementById(`faq-${id}`);
+            const icon = document.getElementById(`icon-${id}`);
+            
+            // Check if open
+            if (faqPanel.style.maxHeight === '0px' || faqPanel.style.maxHeight === '') {
+                faqPanel.style.maxHeight = faqPanel.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                faqPanel.style.maxHeight = '0px';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Switch Tabs for Tuition & Scholarship Section
+        function switchTab(tabId) {
+            // Hide all contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => {
+                content.classList.add('hidden');
+                content.classList.remove('block');
+            });
+
+            // Deactivate all buttons
+            const tabs = ['feeStructure', 'scholarship'];
+            tabs.forEach(tab => {
+                const button = document.getElementById(`tab-${tab}`);
+                button.className = "px-6 py-2 border-b-2 border-transparent text-stone-500 font-medium text-sm tracking-wide hover:text-brand-green focus:outline-none transition-all";
+            });
+
+            // Activate chosen content
+            const activeContent = document.getElementById(`content-${tabId}`);
+            activeContent.classList.add('block');
+            activeContent.classList.remove('hidden');
+
+            // Activate chosen button
+            const activeBtn = document.getElementById(`tab-${tabId}`);
+            activeBtn.className = "px-6 py-2 border-b-2 border-brand-green text-brand-green font-bold text-sm tracking-wide focus:outline-none transition-all";
+        }
+
+        // Modal triggers
+        const infoModal = document.getElementById('infoModal');
+
+        function openModal() {
+            infoModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Stop background scrolling
+        }
+
+        function closeModal() {
+            infoModal.classList.add('hidden');
+            document.body.style.overflow = 'auto'; // Re-enable scroll
+        }
+
+        // Close modal when clicking background overlay
+        infoModal.addEventListener('click', (e) => {
+            if (e.target === infoModal) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
