@@ -13,16 +13,16 @@
                 extend: {
                     colors: {
                         brand: {
-                            darkGreen: '#063B23',
-                            green: '#094F29',
+                            darkGreen: '#007944',
+                            green: '#007944',
                             lightGreen: '#0D6E3B',
                             cream: '#FAF7F0',
                             darkCream: '#F1EAD9',
-                            gold: '#D4A316',
+                            gold: '#f8c908',
                         }
                     },
                     fontFamily: {
-                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        serif: ['Fraunces', 'serif'],
                         sans: ['Inter', 'sans-serif'],
                     }
                 }
@@ -32,14 +32,67 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="font-sans text-stone-800 bg-brand-cream overflow-x-hidden">
 
 
-    <!-- ABOUT US PAGE -->
+<header class="sticky top-0 z-50 bg-brand-darkGreen/95 backdrop-blur-md text-white border-b border-brand-green/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        <a href="/index.html" class="flex items-center space-x-3">
+            <div
+                class="w-10 h-10 bg-brand-gold rounded-full flex items-center justify-center font-serif font-bold text-brand-darkGreen text-xl">
+                E</div>
+            <div>
+                <span class="block font-serif font-bold text-lg leading-tight tracking-wide">EBIS</span>
+                <span class="block text-xs text-brand-cream/80 tracking-widest uppercase">East Bangalore</span>
+            </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden lg:flex items-center space-x-6 text-xs font-medium tracking-wide uppercase">
+            <a href="index.html" class="hover:text-brand-gold transition-colors">Home</a>
+            <a href="aboutus.html" class="hover:text-brand-gold transition-colors">About Us</a>
+            <a href="admission.html" class="hover:text-brand-gold transition-colors">Admission</a>
+            <a href="curriculam.html" class="hover:text-brand-gold transition-colors">Curriculam</a>
+            <a href="campus.html" class="hover:text-brand-gold transition-colors">Campus</a>
+            <a href="contactus.html" class="hover:text-brand-gold transition-colors">Contact Us</a>
+        </nav>
+
+        <div class="hidden lg:flex items-center space-x-4">
+            <button onclick="openModal()"
+                class="border border-brand-cream hover:bg-brand-cream hover:text-brand-darkGreen px-4 py-2 text-xs font-medium uppercase tracking-wider transition-all duration-300">Request
+                Info</button>
+            <a href="/apply.html"
+                class="bg-brand-gold text-brand-darkGreen hover:bg-white hover:text-brand-green px-5 py-2 text-xs font-bold uppercase tracking-wider transition-all duration-300 shadow-md">Apply
+                Now</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuBtn" class="lg:hidden text-white focus:outline-none">
+            <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu"
+        class="hidden lg:hidden bg-brand-darkGreen border-t border-brand-green/35 px-4 py-6 space-y-4 shadow-xl">
+        <a href="#portals" class="block text-brand-cream hover:text-brand-gold text-sm py-1">Grade Portals</a>
+        <a href="#criteria" class="block text-brand-cream hover:text-brand-gold text-sm py-1">Eligibility & Docs</a>
+        <a href="#process" class="block text-brand-cream hover:text-brand-gold text-sm py-1">Admission Process</a>
+        <a href="#tuition" class="block text-brand-cream hover:text-brand-gold text-sm py-1">Tuition & Scholar</a>
+        <a href="#enquire" class="block text-brand-cream hover:text-brand-gold text-sm py-1">Global Enquiries</a>
+        <div class="pt-4 border-t border-brand-green flex flex-col space-y-3">
+            <button onclick="openModal()"
+                class="w-full text-center border border-brand-cream text-white py-2 text-sm font-medium">Request
+                Info</button>
+            <a href="#portals"
+                class="w-full text-center bg-brand-gold text-brand-darkGreen py-2 text-sm font-bold">Apply Now</a>
+        </div>
+    </div>
+</header>
 <main class="bg-brand-cream text-stone-800 overflow-x-hidden">
 
     <!-- ==========================================
@@ -64,126 +117,7 @@
     </section>
 
 
-    <!-- ==========================================
-         2. VISION & MISSION
-         ========================================== -->
-    <!-- CREATIVE VISION & MISSION WITH EMBEDDED METRICS -->
-<section id="vision-mission" class="py-24 bg-white relative overflow-hidden">
-    <!-- Ambient geometric design accents -->
-    <div class="absolute top-12 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-brand-cream/40 rounded-full blur-3xl pointer-events-none"></div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
-        
-        <!-- SECTION HEADING -->
-        <div class="text-center max-w-3xl mx-auto space-y-4 relative z-10">
-            <span class="text-brand-gold text-xs font-bold tracking-widest uppercase block">Our Foundational Blueprint</span>
-            <h2 class="font-serif font-bold text-3xl lg:text-5xl text-brand-darkGreen tracking-tight">
-                Architecting the Future of Global Education
-            </h2>
-            <div class="w-16 h-1 bg-brand-green mx-auto rounded-full"></div>
-        </div>
-
-        <!-- VISION ROW: Graphic Right, Data Left -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
-            
-            <!-- Vision Core Text & Indicators (Span 5) -->
-            <div class="lg:col-span-5 space-y-6 relative z-10">
-                <div class="inline-flex items-center space-x-2 bg-brand-cream text-brand-darkGreen px-4 py-2 rounded-xl border border-brand-darkCream/50">
-                    <i class="fa-solid fa-eye text-brand-gold text-sm"></i>
-                    <span class="font-serif font-bold text-xs uppercase tracking-wider">The Horizon</span>
-                </div>
-                <h3 class="font-serif font-bold text-3xl lg:text-4xl text-brand-darkGreen leading-tight">
-                    Our Vision
-                </h3>
-                <p class="text-stone-600 text-sm leading-relaxed font-light">
-                    To serve as a premier global incubator where childhood wonder seamlessly transitions into sophisticated intellectual confidence. We envision a generation capable of moving fluidly between advanced digital syntax and deep, cross-cultural collaboration.
-                </p>
-                
-                <!-- Informational Targets -->
-                <div class="pt-4 border-t border-brand-darkCream/40 grid grid-cols-2 gap-4">
-                    <div class="space-y-1">
-                        <span class="block font-serif text-2xl font-bold text-brand-darkGreen">100%</span>
-                        <span class="block text-[10px] text-stone-500 uppercase tracking-wider font-medium">Global Competency Integration</span>
-                    </div>
-                    <div class="space-y-1">
-                        <span class="block font-serif text-2xl font-bold text-brand-gold">0-Carbon</span>
-                        <span class="block text-[10px] text-stone-500 uppercase tracking-wider font-medium">Sustainable Campus Living</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Vision Visual Frame with Overlap Feature (Span 7) -->
-            <div class="lg:col-span-7 grid grid-cols-12 gap-4 relative">
-                <!-- Large Base Image -->
-                <div class="col-span-8 relative overflow-hidden rounded-[2.5rem] shadow-lg h-[380px] border-4 border-white group z-10">
-                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=800" 
-                         alt="Imaginative Learning Framework" 
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                </div>
-                <!-- Overlapping Decorative Mini Image -->
-                <div class="col-span-4 absolute bottom-[-20px] right-0 overflow-hidden rounded-[2rem] shadow-2xl h-[220px] border-4 border-white hidden sm:block group z-20">
-                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=400" 
-                         alt="Digital Workspace Engagement" 
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                </div>
-                <!-- Decorative Geometric Underlay -->
-                <div class="absolute top-[-15px] right-12 w-48 h-48 bg-brand-gold/15 rounded-[2rem] -rotate-6 -z-10"></div>
-            </div>
-        </div>
-
-        <!-- MISSION ROW: Graphic Left, Data Right -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center pt-12 lg:pt-16">
-            
-            <!-- Mission Visual Frame with Overlap Feature (Span 7) - First on Desktop -->
-            <div class="lg:col-span-7 grid grid-cols-12 gap-4 relative order-last lg:order-first">
-                <!-- Decorative Geometric Underlay -->
-                <div class="absolute bottom-[-15px] left-12 w-48 h-48 bg-brand-green/10 rounded-[2rem] rotate-6 -z-10"></div>
-                
-                <!-- Overlapping Decorative Mini Image -->
-                <div class="col-span-4 absolute top-[-20px] left-0 overflow-hidden rounded-[2rem] shadow-2xl h-[220px] border-4 border-white hidden sm:block group z-20">
-                    <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&q=80&w=400" 
-                         alt="Athletic Excellence Track" 
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                </div>
-                
-                <!-- Large Base Image -->
-                <div class="col-span-8 col-start-5 relative overflow-hidden rounded-[2.5rem] shadow-lg h-[380px] border-4 border-white group z-10">
-                    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=800" 
-                         alt="STEM Hands-on Experimentation" 
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                </div>
-            </div>
-
-            <!-- Mission Core Text & Indicators (Span 5) -->
-            <div class="lg:col-span-5 space-y-6 relative z-10">
-                <div class="inline-flex items-center space-x-2 bg-brand-cream text-brand-darkGreen px-4 py-2 rounded-xl border border-brand-darkCream/50">
-                    <i class="fa-solid fa-compass text-brand-green text-sm"></i>
-                    <span class="font-serif font-bold text-xs uppercase tracking-wider">The Execution</span>
-                </div>
-                <h3 class="font-serif font-bold text-3xl lg:text-4xl text-brand-darkGreen leading-tight">
-                    Our Mission
-                </h3>
-                <p class="text-stone-600 text-sm leading-relaxed font-light">
-                    We actively execute our vision by providing responsive, child-centric environments built with premium technological sandboxes and professional sports infrastructures. By maintaining a strict balanced ratio of structured logic to creative play, we preserve the organic happiness of childhood while accelerating academic achievement.
-                </p>
-                
-                <!-- Informative Metric Blocks -->
-                <div class="space-y-3.5 pt-2">
-                    <div class="flex items-center space-x-3 p-3 bg-brand-cream/30 rounded-xl border border-brand-darkCream/40">
-                        <div class="w-8 h-8 rounded-lg bg-brand-darkGreen text-brand-gold flex items-center justify-center text-xs"><i class="fa-solid fa-server"></i></div>
-                        <p class="text-stone-700 font-medium text-xs">Active Application over rote memorization techniques.</p>
-                    </div>
-                    <div class="flex items-center space-x-3 p-3 bg-brand-cream/30 rounded-xl border border-brand-darkCream/40">
-                        <div class="w-8 h-8 rounded-lg bg-brand-green text-brand-gold flex items-center justify-center text-xs"><i class="fa-solid fa-heart-pulse"></i></div>
-                        <p class="text-stone-700 font-medium text-xs">Equal focus placed on physical health & biometric stamina.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
 
 
     <!-- ==========================================
@@ -295,35 +229,248 @@
     <!-- ==========================================
          5. WHY CHOOSE OUR SCHOOL
          ========================================== -->
-    <section class="py-24 bg-brand-cream relative">
+    <section id="campus-philosophy" class="py-20 bg-brand-green text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <div class="lg:col-span-4 space-y-6">
+                    <span class="text-brand-gold text-xs font-bold tracking-widest uppercase block">Our Campus</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold leading-tight">
+                        A Campus Designed for Tomorrow
+                    </h2>
+                    <p class="text-brand-cream/80 text-sm leading-relaxed">
+                        Every corner of our campus is thoughtfully designed to inspire curiosity, creativity,
+                        collaboration, and wellbeing. Blending cutting-edge technology with sustainable architecture, we
+                        create an environment where every learner can thrive.
+                    </p>
+                    <a href="#campus-tour"
+                        class="inline-block bg-brand-gold text-brand-darkGreen hover:bg-white hover:text-brand-green font-bold px-6 py-3 text-sm transition-all duration-300">
+                        Explore Our Campus
+                    </a>
+                </div>
+
+                <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                    <!-- Card 1 -->
+                    <div
+                        class="p-6 bg-brand-darkGreen border border-brand-cream/10 rounded hover:border-brand-gold/40 transition-colors">
+                        <i class="fa-solid fa-building-columns text-brand-gold text-2xl mb-4"></i>
+                        <h3 class="font-serif font-bold text-lg text-white mb-2">
+                            Smart Learning Spaces
+                        </h3>
+                        <p class="text-stone-300 text-xs leading-relaxed">
+                            Flexible classrooms equipped with interactive technology encourage collaboration,
+                            creativity, and personalized learning.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="p-6 bg-brand-darkGreen border border-brand-cream/10 rounded hover:border-brand-gold/40 transition-colors">
+                        <i class="fa-solid fa-microchip text-brand-gold text-2xl mb-4"></i>
+                        <h3 class="font-serif font-bold text-lg text-white mb-2">
+                            Future Innovation Hub
+                        </h3>
+                        <p class="text-stone-300 text-xs leading-relaxed">
+                            Robotics, AI, coding, and makerspaces empower students to explore, invent, and solve
+                            real-world challenges.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="p-6 bg-brand-darkGreen border border-brand-cream/10 rounded hover:border-brand-gold/40 transition-colors">
+                        <i class="fa-solid fa-seedling text-brand-gold text-2xl mb-4"></i>
+                        <h3 class="font-serif font-bold text-lg text-white mb-2">
+                            Green & Sustainable Campus
+                        </h3>
+                        <p class="text-stone-300 text-xs leading-relaxed">
+                            Eco-friendly landscapes, solar energy, rainwater harvesting, and outdoor learning spaces
+                            connect students with nature.
+                        </p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div
+                        class="p-6 bg-brand-darkGreen border border-brand-cream/10 rounded hover:border-brand-gold/40 transition-colors">
+                        <i class="fa-solid fa-heart-pulse text-brand-gold text-2xl mb-4"></i>
+                        <h3 class="font-serif font-bold text-lg text-white mb-2">
+                            Safe & Happy Environment
+                        </h3>
+                        <p class="text-stone-300 text-xs leading-relaxed">
+                            Secure facilities, wellness spaces, sports amenities, and inclusive community areas ensure
+                            every child feels safe, valued, and inspired.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-brand-cream relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-            
-            <div class="text-center max-w-2xl mx-auto space-y-3">
-                <span class="text-brand-gold text-xs font-bold tracking-widest uppercase block">The EBIS Advantage</span>
-                <h2 class="font-serif font-bold text-3xl lg:text-4xl text-brand-darkGreen">Why Families Choose Us</h2>
-                <div class="w-12 h-1 bg-brand-green mx-auto rounded-full"></div>
+
+            <!-- FLOATING TOP METRICS BAR -->
+
+
+            <!-- MAIN LAYOUT GRAPHIC CONTAINER -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+
+                <!-- LEFT HAND CALL-TO-ACTION FRAME (Span 3) -->
+                <div class="lg:col-span-3 lg:sticky lg:top-28 space-y-5 py-4">
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-darkGreen leading-tight">
+                        Explore Our World-Class Campus
+                    </h2>
+                    <p class="text-stone-600 text-xs leading-relaxed font-light">
+                        Every corner of our environment is intentionally engineered to spark early curiosity, build
+                        confidence, and balance intensive study with active hands-on experimentation.
+                    </p>
+                    <div class="pt-2">
+                        <a href="#facilities"
+                            class="inline-flex items-center justify-between bg-brand-darkGreen text-white hover:bg-brand-gold hover:text-brand-darkGreen w-full sm:w-auto lg:w-full px-6 py-3.5 text-xs font-bold uppercase tracking-widest transition-all duration-300 shadow-sm rounded-lg group">
+                            <span>Explore Facilities</span>
+                            <i
+                                class="fa-solid fa-arrow-right ml-3 transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- RIGHT HAND GRID SHOWCASE (Span 9) -->
+                <div class="lg:col-span-9 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <!-- Card 1: Smart Classrooms -->
+                    <div class="bg-white border border-brand-darkCream/40 rounded-2xl overflow-hidden shadow-sm group">
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=400"
+                                alt="Smart Classrooms"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute top-3 left-3 w-9 h-9 rounded-full bg-brand-darkGreen/90 text-brand-gold border border-brand-gold/40 flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h4 class="font-serif font-bold text-sm text-brand-darkGreen">Smart Classrooms</h4>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: STEM Labs -->
+                    <div class="bg-white border border-brand-darkCream/40 rounded-2xl overflow-hidden shadow-sm group">
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=400"
+                                alt="STEM Labs"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute top-3 left-3 w-9 h-9 rounded-full bg-brand-darkGreen/90 text-brand-gold border border-brand-gold/40 flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-atom"></i>
+                            </div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h4 class="font-serif font-bold text-sm text-brand-darkGreen">STEM & Innovation Labs</h4>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Library -->
+                    <div class="bg-white border border-brand-darkCream/40 rounded-2xl overflow-hidden shadow-sm group">
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=400"
+                                alt="Library"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute top-3 left-3 w-9 h-9 rounded-full bg-brand-darkGreen/90 text-brand-gold border border-brand-gold/40 flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-book-open"></i>
+                            </div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h4 class="font-serif font-bold text-sm text-brand-darkGreen">Library & Commons</h4>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Performing Arts -->
+                    <div class="bg-white border border-brand-darkCream/40 rounded-2xl overflow-hidden shadow-sm group">
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&q=80&w=400"
+                                alt="Performing Arts"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute top-3 left-3 w-9 h-9 rounded-full bg-brand-darkGreen/90 text-brand-gold border border-brand-gold/40 flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-masks-theater"></i>
+                            </div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h4 class="font-serif font-bold text-sm text-brand-darkGreen">Performing Arts Centre</h4>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Sports Complex -->
+                    <div class="bg-white border border-brand-darkCream/40 rounded-2xl overflow-hidden shadow-sm group">
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&q=80&w=400"
+                                alt="Sports Complex"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute top-3 left-3 w-9 h-9 rounded-full bg-brand-darkGreen/90 text-brand-gold border border-brand-gold/40 flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-ranking-star"></i>
+                            </div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h4 class="font-serif font-bold text-sm text-brand-darkGreen">Sports Complex</h4>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Swimming Pool -->
+                    <div class="bg-white border border-brand-darkCream/40 rounded-2xl overflow-hidden shadow-sm group">
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1530745342582-0795f23ec976?auto=format&fit=crop&q=80&w=400"
+                                alt="Swimming Pool"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute top-3 left-3 w-9 h-9 rounded-full bg-brand-darkGreen/90 text-brand-gold border border-brand-gold/40 flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-person-swimming"></i>
+                            </div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h4 class="font-serif font-bold text-sm text-brand-darkGreen">Swimming Pool</h4>
+                        </div>
+                    </div>
+
+                    <!-- Card 7: Art Studio -->
+                    <div class="bg-white border border-brand-darkCream/40 rounded-2xl overflow-hidden shadow-sm group">
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=400"
+                                alt="Art & Design Studio"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute top-3 left-3 w-9 h-9 rounded-full bg-brand-darkGreen/90 text-brand-gold border border-brand-gold/40 flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-bezier-curve"></i>
+                            </div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h4 class="font-serif font-bold text-sm text-brand-darkGreen">Art & Design Studio</h4>
+                        </div>
+                    </div>
+
+                    <!-- Card 8: Cafeteria -->
+                    <div class="bg-white border border-brand-darkCream/40 rounded-2xl overflow-hidden shadow-sm group">
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=400"
+                                alt="Cafeteria & Nutrition"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute top-3 left-3 w-9 h-9 rounded-full bg-brand-darkGreen/90 text-brand-gold border border-brand-gold/40 flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-utensils"></i>
+                            </div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h4 class="font-serif font-bold text-sm text-brand-darkGreen">Cafeteria & Nutrition</h4>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Advantage 1 -->
-                <div class="bg-white p-8 rounded-3xl border border-brand-darkCream/40 space-y-4 shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-10 h-10 rounded-full bg-brand-cream text-brand-darkGreen flex items-center justify-center text-sm"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <h4 class="font-serif font-bold text-lg text-brand-darkGreen">International Curriculum</h4>
-                    <p class="text-stone-600 text-xs leading-relaxed font-light">Highly aligned inquiry-based learning models matching the highest standards of Global Baccalaureate and Cambridge platforms.</p>
-                </div>
-                <!-- Advantage 2 -->
-                <div class="bg-white p-8 rounded-3xl border border-brand-darkCream/40 space-y-4 shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-10 h-10 rounded-full bg-brand-cream text-brand-darkGreen flex items-center justify-center text-sm"><i class="fa-solid fa-shield-halved"></i></div>
-                    <h4 class="font-serif font-bold text-lg text-brand-darkGreen">Safe & Warm Spaces</h4>
-                    <p class="text-stone-600 text-xs leading-relaxed font-light">Eco-friendly campus materials, intelligent environmental climate controls, and professional medical safeguards integrated throughout.</p>
-                </div>
-                <!-- Advantage 3 -->
-                <div class="bg-white p-8 rounded-3xl border border-brand-darkCream/40 space-y-4 shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-10 h-10 rounded-full bg-brand-cream text-brand-darkGreen flex items-center justify-center text-sm"><i class="fa-solid fa-puzzle-piece"></i></div>
-                    <h4 class="font-serif font-bold text-lg text-brand-darkGreen">Imaginative Discovery</h4>
-                    <p class="text-stone-600 text-xs leading-relaxed font-light">Customized sandbox modules designed purposefully to transition children smoothly from simple digital players to technology champions.</p>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -530,6 +677,70 @@
 
     </div>
 </section>
+<footer class="bg-brand-darkGreen text-white/90 border-t border-brand-green/30 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                    <div
+                        class="w-8 h-8 bg-brand-gold rounded-full flex items-center justify-center font-serif font-bold text-brand-darkGreen text-base">
+                        E</div>
+                    <span class="font-serif font-bold text-lg tracking-wide">EBIS</span>
+                </div>
+                <p class="text-stone-400 text-xs leading-relaxed">
+                    Accredited international standard campus offering holistic development pathways to modern global
+                    leaders.
+                </p>
+                <div class="flex space-x-4 pt-2">
+                    <a href="#" class="text-brand-gold hover:text-white"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="text-brand-gold hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-brand-gold hover:text-white"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-bold text-xs tracking-wider uppercase text-brand-gold">Admissions Channels</h4>
+                <ul class="space-y-2 text-xs text-stone-400">
+                    <li><a href="#portals" class="hover:text-brand-gold">Nursery - Grade IX Portal</a></li>
+                    <li><a href="#portals" class="hover:text-brand-gold">Grade XI Senior Portal</a></li>
+                    <li><a href="#criteria" class="hover:text-brand-gold">Age Eligibility Norms</a></li>
+                    <li><a href="#criteria" class="hover:text-brand-gold">Document Dossier Pack</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-bold text-xs tracking-wider uppercase text-brand-gold">Contact Desk</h4>
+                <p class="text-xs text-stone-400"><i class="fa-solid fa-location-dot mr-2 text-brand-gold"></i> East
+                    Bangalore IT Corridor, Bengaluru, KA</p>
+                <p class="text-xs text-stone-400"><i class="fa-solid fa-phone mr-2 text-brand-gold"></i> +91 80 4991
+                    2200</p>
+                <p class="text-xs text-stone-400"><i class="fa-solid fa-envelope mr-2 text-brand-gold"></i>
+                    admissions@ebis.edu.in</p>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-bold text-xs tracking-wider uppercase text-brand-gold">Global Affiliations</h4>
+                <p class="text-xs text-stone-400 leading-relaxed">Authorized International Baccalaureate (IB) World
+                    Campus and Cambridge International Pathway provider.</p>
+                <div class="flex space-x-2">
+                    <span
+                        class="bg-brand-green px-2 py-0.5 text-[9px] font-semibold text-brand-gold rounded">IBDP</span>
+                    <span
+                        class="bg-brand-green px-2 py-0.5 text-[9px] font-semibold text-brand-gold rounded">CAIE</span>
+                    <span
+                        class="bg-brand-green px-2 py-0.5 text-[9px] font-semibold text-brand-gold rounded">CBSE</span>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-brand-green/30 flex flex-col sm:flex-row justify-between items-center text-[11px] text-stone-400">
+            <p>&copy; 2026 East Bangalore International School. All rights reserved.</p>
+            <div class="flex space-x-4 mt-4 sm:mt-0">
+                <a href="#" class="hover:text-brand-gold">Privacy Directives</a>
+                <a href="#" class="hover:text-brand-gold">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
 
 </main>
 
